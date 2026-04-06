@@ -190,11 +190,3 @@ The current eval set is 15 hand-labeled transcripts — enough to catch obvious 
 | Synthetic data | PII-safe, controllable scenario coverage | Distribution shift vs. real calls |
 | LLM-as-judge for hallucination | Scalable, no human review bottleneck | Judge has its own error modes |
 | Separate eval CSV | Clean separation of labels from outputs | Manual labeling overhead |
-
----
-
-## Requirements
-
-```
-anthropic>=0.20.0
-```
