@@ -134,14 +134,9 @@ export ANTHROPIC_API_KEY=your_key_here
 python -c "from ingest import load_transcripts; load_transcripts('synthetic', n=30)"
 ```
 
-**Run batch pipeline:**
+**Run batch pipeline and evaluation:**
 ```bash
 python run.py
-```
-
-**Run evaluation:**
-```bash
-python evaluate.py
 ```
 
 **Smoke test individual components:**
