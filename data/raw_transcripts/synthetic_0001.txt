@@ -1,0 +1,67 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Hi, yeah, I'm looking at my statement online and there's a charge on here I definitely didn't make. It's for like $347 at some electronics store I've never heard of.
+
+Agent: I'm sorry to hear about that. I'll be happy to help you with this potential fraudulent charge. Can you please provide me with your credit card number so I can pull up your account?
+
+Customer: Sure, it's 4532-1678-9012-3456.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 7829.
+
+Agent: Perfect, I have your account pulled up here. I can see the charge you're referring to - it's $347.82 at TechWorld Electronics posted on March 15th. Can you tell me why you believe this is fraudulent?
+
+Customer: I've never been to any TechWorld Electronics, I don't even know where that is. Plus I was at work all day on March 15th, I couldn't have made that purchase.
+
+Agent: I understand your concern. Let me check the transaction details... I see this was processed as a card-present transaction in Denver, Colorado. Does that location mean anything to you?
+
+Customer: Denver? No, I live in Phoenix and I haven't traveled anywhere recently. This is definitely not my charge.
+
+Agent: I can see why you're concerned. I'm going to initiate a fraud investigation for this transaction. However, I do need to let you know that there are a few other transactions around the same time period that I want to review with you.
+
+Customer: Wait, what other transactions?
+
+Agent: I see a charge for $89.99 at GameStop on March 14th and another for $156.43 at Best Buy on March 16th. Were these purchases made by you?
+
+Customer: The GameStop one, yes, that was me. But Best Buy for $156? What did I supposedly buy there?
+
+Agent: The merchant description shows it was for electronics accessories. Are you certain you didn't make this purchase?
+
+Customer: I mean... I did go to Best Buy recently to look at phone cases, but I don't remember spending that much. What day did you say that was?
+
+Agent: March 16th, so this past Saturday.
+
+Customer: Hmm, Saturday... I did go there Saturday but I thought I only bought a phone charger for like thirty bucks. Can you see what exactly was purchased?
+
+Agent: Unfortunately, I only have the merchant name and total amount. The detailed receipt information isn't available in our system. You might need to check your email receipts or contact the store directly.
+
+Customer: This is frustrating. I'm positive about the TechWorld one though - that's definitely fraud.
+
+Agent: Absolutely, I understand. I'm going to dispute the TechWorld Electronics charge of $347.82 for you right now. You'll receive a provisional credit within 2 business days while we investigate.
+
+Customer: Okay good. What about the Best Buy one? Can you dispute that too just in case?
+
+Agent: Since you're uncertain about that transaction and you did visit the store on that date, I'd recommend you verify with Best Buy first. If you confirm you didn't make that purchase, you can call us back and we'll add it to the investigation.
+
+Customer: That seems like a lot of extra work for me. Can't you just dispute both?
+
+Agent: I understand it's inconvenient, but since you're unsure and you were actually at that merchant location, our fraud department requires some verification first. This helps protect your account and prevents unnecessary disputes.
+
+Customer: Fine, whatever. So you're only disputing the TechWorld charge for now?
+
+Agent: That's correct. I've filed the dispute for $347.82 from TechWorld Electronics. Your new card will arrive in 7-10 business days. Is your mailing address still 2847 Oak Street, Phoenix, Arizona 85016?
+
+Customer: Yeah, that's right. So I can still use my card until the new one comes?
+
+Agent: I'm canceling your current card for security purposes, so no, you won't be able to use it after today. You should receive your new card by next Thursday.
+
+Customer: Great, so now I have no card for a week. This is really inconvenient.
+
+Agent: I apologize for the inconvenience, but this is the safest approach when fraud is suspected. Is there anything else I can help you with regarding this matter?
+
+Customer: No, I guess that's it. I'll deal with the Best Buy thing later.
+
+Agent: Perfect. You should receive an email confirmation about the dispute within the next hour. Thank you for calling SecureCard, and have a good day.
+
+Customer: Yeah, thanks. Bye.

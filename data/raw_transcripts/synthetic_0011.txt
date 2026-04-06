@@ -1,0 +1,61 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Hi, I'm calling because I was given completely wrong information yesterday about a charge on my account and now I'm really frustrated.
+
+Agent: I'm sorry to hear that. Can I get your account number so I can pull up your information?
+
+Customer: It's 4529-8834-7721-9045.
+
+Agent: Thank you. And can you verify your full name and zip code for security purposes?
+
+Customer: Sarah Mitchell, zip code 33156.
+
+Agent: Perfect, I have your account pulled up. Can you tell me what happened with the previous call?
+
+Customer: Yesterday I called about a $347.82 charge from something called "Premium Lifestyle Services" that showed up on my March statement. The agent told me it was definitely fraud and that you guys would reverse it immediately and send me a new card.
+
+Agent: I see. Let me look at the notes from that call on March 15th. 
+
+Customer: Right, and then today I check my account online and not only is the charge still there, but I got an email saying my dispute was denied because it's a legitimate recurring charge.
+
+Agent: I'm looking at your account history now. I can see that Premium Lifestyle Services charge, and I do see notes from yesterday's call, but let me review the details of this merchant.
+
+Customer: The agent yesterday didn't even look into it properly. They just assumed it was fraud and told me I'd see the credit within 24 hours. Now I'm getting conflicting information.
+
+Agent: I understand your frustration. Looking at this more carefully, I can see that Premium Lifestyle Services is actually linked to a subscription service. Do you recall signing up for any premium memberships or services recently?
+
+Customer: No, I definitely didn't sign up for anything like that. That's why I called in the first place.
+
+Agent: Let me dig deeper into this. I can see the charge has been recurring monthly since January - there was a $347.82 charge in January, February, and now March.
+
+Customer: Wait, what? The agent yesterday said this was the first charge from them. Are you telling me I've been charged three times?
+
+Agent: Unfortunately, yes. I'm seeing charges on January 12th, February 12th, and March 12th, all for the same amount from the same merchant.
+
+Customer: This is unbelievable. How did the previous agent miss two other charges? And why wasn't I told about this?
+
+Agent: I apologize, but I don't have an explanation for why that information wasn't shared with you yesterday. Let me see what I can find out about this merchant and how these charges originated.
+
+Customer: I want all three charges reversed immediately. If your agent had done their job properly yesterday, we could have caught all of this.
+
+Agent: I understand you want this resolved quickly. Let me check our merchant database for Premium Lifestyle Services to see what information we have about how customers typically get enrolled.
+
+Customer: I've been a customer for eight years and I've never had service this bad. I shouldn't have to call twice to get basic information about my own account.
+
+Agent: You're absolutely right, and I apologize for the confusion. I'm seeing some conflicting information in our system about this merchant, and I want to make sure I give you accurate details this time.
+
+Customer: So what does that mean for getting my money back? We're talking about over a thousand dollars now.
+
+Agent: Given the complexity of this situation and the previous misinformation, I think this needs to be handled by our specialized dispute resolution team. They have access to more detailed merchant information and can properly investigate all three charges.
+
+Customer: Are you serious? I'm being transferred again? How do I know they won't give me wrong information too?
+
+Agent: I understand your concern, but I want to make sure you get the right resolution rather than potentially giving you incorrect information like what happened yesterday. This really needs someone with higher-level access to handle properly.
+
+Customer: Fine, but I want a reference number and I want to know exactly what's going to happen next.
+
+Agent: Absolutely. I'm creating an escalation case number 847291 for you. The dispute resolution team will call you back within 24 hours to review all three charges and determine the appropriate resolution. Is your callback number still 305-555-7829?
+
+Customer: Yes, but they better call me tomorrow. I'm not waiting around for another week of runaround.
+
+Agent: They will contact you by end of business tomorrow. I've noted all the details of today's call and the issues with yesterday's information in your file.

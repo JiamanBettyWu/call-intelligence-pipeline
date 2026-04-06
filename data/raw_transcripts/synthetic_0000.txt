@@ -1,0 +1,57 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Yeah, hi. I'm looking at my statement and there's this charge for $29.99 that I never authorized. It says "FitFlow Premium" or something like that. I never signed up for any fitness thing.
+
+Agent: I'd be happy to help you look into that charge. Can I get your account number to pull up your information?
+
+Customer: Sure, it's 4521-8834-7712-9058.
+
+Agent: Perfect, thank you. I'm pulling up your account now. And can you verify the last four digits of your social security number for security purposes?
+
+Customer: 7834.
+
+Agent: Great, thank you. I can see your account here. You mentioned a charge for $29.99 for FitFlow Premium. I can see that charge posted on November 15th. Can you tell me a little more about what happened?
+
+Customer: That's just it - nothing happened! I never signed up for this service. I don't even know what FitFlow is. This is the second month I'm seeing this charge and I'm getting pretty frustrated about it.
+
+Agent: I completely understand your frustration. Let me look at the charge details here. I can see this is showing as a recurring monthly charge that started in October. Do you recall making any online purchases or signing up for any free trials around that time?
+
+Customer: Well, maybe some online shopping but nothing fitness-related. Wait, could this be from one of those free trial things that tricks you into paying?
+
+Agent: That's definitely possible. Sometimes when customers sign up for what appears to be a free trial, there can be recurring charges that start after the trial period ends. Let me check if we have any additional details about this merchant.
+
+Customer: This is ridiculous. I'm very careful about this stuff. Can you just remove the charges?
+
+Agent: I'm going to do everything I can to help you resolve this. I can see that FitFlow Premium is indeed a fitness app subscription service. Since you're stating you didn't authorize this recurring charge, I can file a dispute for both the November charge of $29.99 and the October charge of $29.99.
+
+Customer: Yes, please do that. I want both of those charges reversed.
+
+Agent: Absolutely. I'm initiating the dispute process now for both charges totaling $59.98. You should see a temporary credit for that amount on your account within 1-2 business days while we investigate.
+
+Customer: Okay, that sounds better. How long does the whole process take?
+
+Agent: The investigation typically takes 5-7 business days. In the meantime, I'm also going to block any future charges from FitFlow Premium to prevent this from happening again.
+
+Customer: Good, because I definitely don't want to deal with this next month too.
+
+Agent: I've placed the block on your account now, so no future charges from that merchant will go through. I'm also sending you a confirmation email with your dispute reference number, which is DP-887432.
+
+Customer: Great. And I'll get my money back?
+
+Agent: Based on what you've told me, this looks like a straightforward unauthorized recurring charge case. I expect the dispute will be resolved in your favor and the temporary credit will become permanent.
+
+Customer: Alright, well that's a relief. Is there anything else I need to do?
+
+Agent: The only thing I'd recommend is keeping an eye on your statements going forward, and if you see any other charges you don't recognize, give us a call right away. The dispute team will handle everything else from here.
+
+Customer: Will do. Thanks for actually helping me out instead of giving me the runaround.
+
+Agent: You're very welcome. Is there anything else I can help you with today regarding your account?
+
+Customer: No, I think that covers it. Thanks again.
+
+Agent: Perfect. You should receive that confirmation email within the next hour, and remember your reference number is DP-887432. Thank you for calling SecureCard and have a great day.
+
+Customer: You too, bye.
+
+Agent: Goodbye.

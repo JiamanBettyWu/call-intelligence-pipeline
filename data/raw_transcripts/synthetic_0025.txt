@@ -1,0 +1,57 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Hi, yeah, I'm looking at my statement and there's a charge on here I definitely didn't make. It's for $847.
+
+Agent: I'm sorry to hear about that. Let me help you with this potential fraudulent charge. Can I get your full card number to pull up your account?
+
+Customer: It's 4532 1678 9012 3456.
+
+Agent: Thank you. And can you verify the last four digits of your social security number for security purposes?
+
+Customer: 7829.
+
+Agent: Perfect, I have your account up now. I can see you're referring to a charge from yesterday, March 15th. Can you tell me more about this transaction you're questioning?
+
+Customer: Yeah, it's some company called "TechWorld Electronics" for $847.32. I've never even heard of them, and I definitely didn't buy anything for that much money.
+
+Agent: I understand your concern. Let me look at the transaction details. I see this charge posted yesterday at 2:47 PM, and it shows as an online purchase. Do you recall making any online purchases around that time?
+
+Customer: No, absolutely not. I was at work all day. This is obviously fraud and I need it removed from my account immediately.
+
+Agent: I completely understand your frustration. Let me check a few more details. Have you made any recent purchases with retailers like Best Buy, Amazon, or other electronics stores that might process under a different merchant name?
+
+Customer: Look, I know what I bought and what I didn't buy. I'm telling you this isn't mine. Why are you questioning me instead of just fixing this?
+
+Agent: I apologize, I'm not questioning your integrity at all. I'm required to ask these questions to help build the dispute case. Let me go ahead and start the fraud investigation process for you. I'm placing a temporary credit of $847.32 on your account right now.
+
+Customer: Okay, good. So when will this be permanent?
+
+Agent: The temporary credit will appear within 1-2 business days. However, I need to let you know that we'll be conducting a full investigation which can take up to 10 business days. During that time, we'll contact the merchant and review the transaction details.
+
+Customer: Wait, so you might take the money back? Even though I'm telling you I didn't make this purchase?
+
+Agent: The temporary credit protects you while we investigate. In the vast majority of fraud cases, the credit becomes permanent. However, if our investigation finds that the charge was authorized, we would need to reverse the credit.
+
+Customer: This is ridiculous. What else do I need to do?
+
+Agent: I'm also going to cancel your current card ending in 3456 and expedite a new card to you. You should receive it by March 18th. Is your address still 425 Oak Street, Apartment 2B?
+
+Customer: Yes, that's correct.
+
+Agent: Great. Your new card will have the same account number but different expiration date and security code. Is there anything else about this transaction or any other charges you'd like me to review?
+
+Customer: No, just this one. But I'm really not happy about this "investigation" thing. I shouldn't have to wait to get fraudulent charges removed.
+
+Agent: I understand your frustration completely. The good news is you're protected with the temporary credit, and based on what you've told me, this does appear to be unauthorized. You should receive a letter within 5 business days with all the details of your dispute case number F-2024-789456.
+
+Customer: Fine. And my new card will definitely be here by Monday?
+
+Agent: Yes, it's being expedited and should arrive by March 18th. You'll also receive a tracking number via text if you'd like.
+
+Customer: Okay, I guess that works. Thanks.
+
+Agent: You're welcome. Is there anything else I can help you with today regarding your account?
+
+Customer: No, that's it.
+
+Agent: Alright, thank you for calling SecureCard and have a good day.

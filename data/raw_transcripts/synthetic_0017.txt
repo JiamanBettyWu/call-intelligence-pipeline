@@ -1,0 +1,55 @@
+Agent: Thank you for calling SecureCard customer service, this is speaking. How can I help you today?
+
+Customer: Hi, I need to report some charges on my card that I definitely didn't make. I'm looking at my statement right now and there's stuff on here that makes no sense.
+
+Agent: I'm sorry to hear about that. I'd be happy to help you with those charges. Can I get your card number to pull up your account?
+
+Customer: Yeah, it's 4521 8834 7729 1056.
+
+Agent: Thank you. And can you verify the billing ZIP code on the account?
+
+Customer: 90210.
+
+Agent: Perfect, I have your account pulled up here. What charges are you seeing that you didn't authorize?
+
+Customer: Okay, so on December 15th there's a charge for $287.99 to something called "GameStop Online" and then on December 17th there's another one for $156.43 to "Best Buy Mobile." I haven't bought anything from either of those places in months.
+
+Agent: I can see both of those transactions here. The GameStop charge shows as an online purchase, and the Best Buy charge shows as in-store. Do you still have your physical card with you?
+
+Customer: Yes, it's right here in my wallet. That's why this is so weird. How could someone use my card in a store when I have it right here?
+
+Agent: That is concerning. Sometimes fraudsters can create duplicate cards. Have you shared your card information with anyone recently or made any online purchases?
+
+Customer: I mean, I shop online sometimes but only on sites I trust. Amazon, Target, stuff like that. Nothing sketchy. And I never give my card info to anyone.
+
+Agent: I understand. Let me look at some more recent activity. I'm seeing the GameStop charge was processed at 2:47 AM Pacific time. Do you recall being awake and making any purchases around that time?
+
+Customer: 2:47 in the morning? Are you kidding me? I was definitely asleep. Look, I'm telling you I didn't make these purchases. What are you going to do about it?
+
+Agent: I believe you, and I want to help resolve this. I'm going to start a fraud investigation for both charges. However, I do need to let you know that for the Best Buy charge, since it shows as an in-store purchase, we'll need to request additional documentation from the merchant.
+
+Customer: What kind of documentation? And how long is this going to take? I can't afford to be out almost $450 while you guys figure this out.
+
+Agent: The merchant would provide us with any available security footage or receipt signatures. The investigation typically takes 5 to 10 business days, but it could take up to 90 days for complex cases. I can issue you temporary credit for the GameStop charge since that was clearly an online transaction at an unusual hour.
+
+Customer: Wait, only for the GameStop one? Why not both? I'm telling you I didn't make either purchase.
+
+Agent: I understand your frustration. The Best Buy transaction is showing some additional verification steps were completed during the purchase, so our fraud department needs to review that more carefully before issuing credit.
+
+Customer: This is ridiculous. What verification steps? I wasn't even there!
+
+Agent: I can see that a PIN was entered for that transaction. Do you have anyone else authorized on your account or anyone who might know your PIN?
+
+Customer: No, absolutely not. And there's no way someone could guess my PIN. This has to be some kind of mistake in your system or something. I want to speak to a supervisor.
+
+Agent: I can certainly get a supervisor for you. Before I do that, let me just cancel your current card and expedite a replacement. You should receive the new card within 2 business days.
+
+Customer: Fine, do that. But I still want to talk to someone else about getting both of these charges removed today.
+
+Agent: I understand completely. Let me place you on a brief hold while I get my supervisor. This may take 3 to 5 minutes.
+
+Customer: This better not take forever. I've already wasted enough time on this.
+
+Agent: I have my supervisor available now. She's going to review your case and see what additional options we might have. She'll be with you in just a moment.
+
+Customer: Okay, thank you. But I'm not hanging up until this gets resolved properly.

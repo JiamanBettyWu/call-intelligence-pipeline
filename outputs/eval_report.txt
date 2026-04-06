@@ -1,0 +1,21 @@
+============================================================
+CALL INTELLIGENCE PIPELINE — EVALUATION REPORT
+============================================================
+
+CATEGORY ACCURACY
+  Labeled transcripts:  11
+  Overall accuracy:     63.6%
+
+  Per-category accuracy:
+
+HALLUCINATION DETECTION (LLM-as-judge)
+  Transcripts checked:  30
+  Hallucination rate:   6.7%
+
+CONSISTENCY (non-determinism)
+  Transcripts tested:   5 (3 runs each)
+  Category stability:   100.0%
+  Resolution stability: 100.0%
+
+============================================================
+Full results written to: outputs/eval_results.json

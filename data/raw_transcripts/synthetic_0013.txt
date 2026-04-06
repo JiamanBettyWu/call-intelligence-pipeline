@@ -1,0 +1,41 @@
+Agent: Thank you for calling First National Credit Services, this is customer service. How can I help you today?
+
+Customer: Yeah, hi. I'm calling about my Platinum Rewards card ending in 4782. I just got my statement and there's a $39 late fee on there that I shouldn't have been charged.
+
+Agent: I'd be happy to look into that for you. Can I get the last four digits of your social security number to verify your account?
+
+Customer: It's 7291.
+
+Agent: Thank you. I can see your account here. I'm showing a late fee was applied on March 15th because your minimum payment of $85 wasn't received by the due date of March 12th.
+
+Customer: That's ridiculous. I set up autopay months ago specifically so I wouldn't have late fees. This is your system's fault, not mine.
+
+Agent: I understand your frustration. Let me check your autopay settings... I can see that autopay was set up on January 8th for the minimum payment amount. However, I'm showing your payment was processed on March 14th, which was two days after the due date.
+
+Customer: Two days? Are you kidding me? That's because of processing time or something. I didn't do anything wrong here.
+
+Agent: I can see the payment was initiated from your checking account on March 13th, but our policy requires payments to be received by 5 PM Eastern on the due date. When payments are processed on weekends or after business hours, they can be delayed.
+
+Customer: Look, I've been a customer for eight years and I've never had this problem before. Your autopay system should account for processing delays. This fee needs to be removed.
+
+Agent: I definitely understand your concern, and I appreciate your loyalty as a long-time customer. Let me review your payment history... I can see you do have an excellent payment record overall. You've only had one other late payment in the past two years.
+
+Customer: Exactly! So why am I being penalized for your system's timing issues? This is completely unfair.
+
+Agent: I hear you, and I want to help resolve this. While our policy typically requires payments by the due date regardless of processing delays, I can offer you a one-time courtesy credit of $19.50, which is half of the late fee.
+
+Customer: Half? That's not acceptable. I want the entire fee removed. This wasn't my fault.
+
+Agent: I understand you'd prefer the full amount, but the partial credit is the best I can authorize given that the payment was technically received after the due date. The $19.50 credit would be applied to your account within 24 hours.
+
+Customer: This is really frustrating. I'm considering switching to another card company that actually takes care of their customers.
+
+Agent: I certainly don't want to lose you as a customer. The $19.50 credit is the maximum I can offer today, but I'd also be happy to help you adjust your autopay date to ensure this doesn't happen again. We could move it to process three business days before your due date.
+
+Customer: Fine, I guess that's better than nothing. Yes, change the autopay date so this doesn't happen again.
+
+Agent: Perfect. I'm processing the $19.50 credit now and I've updated your autopay to process three business days early. Is there anything else I can help you with today?
+
+Customer: No, that's it. Thanks, I guess.
+
+Agent: Thank you for calling First National Credit Services, and have a good day.

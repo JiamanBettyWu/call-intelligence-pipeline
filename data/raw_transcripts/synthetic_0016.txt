@@ -1,0 +1,45 @@
+Agent: Thank you for calling SecureCard customer service, this is your representative speaking. How can I help you today?
+
+Customer: Hi, yeah, I'm looking at my statement and there's this charge that keeps showing up that I never authorized. It's been going on for like three months now.
+
+Agent: I'd be happy to help you with that billing concern. Can I get your account number to pull up your information?
+
+Customer: Sure, it's 4847-2156-8834-9021.
+
+Agent: Perfect, I have your account pulled up. Can you tell me which charge you're referring to?
+
+Customer: It's called "StreamMax Premium" for $24.99. It's been charged on the 15th every month since July, and I never signed up for this thing. I don't even know what it is.
+
+Agent: I can see those charges here - July 15th, August 15th, and September 15th, all for $24.99 to StreamMax Premium. Let me look into this for you. Have you ever had any dealings with StreamMax or used any streaming services recently?
+
+Customer: No, I mean... wait. Actually, I did sign up for a free trial of something back in June, but I thought I cancelled it. But this isn't even the same amount - the trial was supposed to be free.
+
+Agent: That could be related. What often happens is customers sign up for a free trial and if it's not cancelled before the trial period ends, it automatically converts to a paid subscription. Do you remember getting any emails about the trial ending?
+
+Customer: Look, I get a million emails. Even if I did, I tried to cancel it. This is ridiculous - I shouldn't be charged for something I don't use and tried to cancel.
+
+Agent: I completely understand your frustration. Let me see what I can do here. I can file a dispute for the most recent charge from September 15th, that's $24.99. However, for the July and August charges, since it's been over 60 days, those would be outside our standard dispute window.
+
+Customer: Are you kidding me? So I'm just out fifty bucks because of your stupid time limit?
+
+Agent: I know this is frustrating. What I can do is process a goodwill credit for one of the earlier charges as a one-time courtesy. So I can dispute the September charge and credit back the August charge, which would be $49.98 total.
+
+Customer: What about July? That's still twenty-five dollars I'm out.
+
+Agent: Unfortunately, the July charge is beyond what I'm able to reverse today. But I am processing the dispute for September and the goodwill credit for August right now. You should see those credits within 3-5 business days.
+
+Customer: This is unbelievable. I'm being penalized because I didn't catch this sooner?
+
+Agent: I understand your frustration. I've also gone ahead and blocked future charges from StreamMax on your card to prevent this from happening again. Is there anything else I can help you with today?
+
+Customer: I guess that's something. So you're saying I'll get back fifty dollars but not the other twenty-five?
+
+Agent: That's correct. The $49.98 will be credited back to your account within 3-5 business days, and no future StreamMax charges will go through on this card.
+
+Customer: Fine. I'm not happy about losing that twenty-five bucks, but I guess it's better than nothing.
+
+Agent: I've made notes on your account about this issue. Your reference number for today's call is CS-2024-8847. Is there anything else I can assist you with?
+
+Customer: No, that's it. Thanks, I guess.
+
+Agent: Thank you for calling SecureCard. Have a good day.

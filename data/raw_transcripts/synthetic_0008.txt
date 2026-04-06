@@ -1,0 +1,53 @@
+Agent: Thank you for calling SecureCard customer service, this is your representative speaking. How can I help you today?
+
+Customer: Hi, I'm calling about a charge on my account that I never authorized. It's been showing up every month for the past three months and I'm getting really frustrated.
+
+Agent: I'm sorry to hear about that concern. I'll be happy to look into this for you. Can I get your account number please?
+
+Customer: Yeah, it's 4782-9156-3344-8821.
+
+Agent: Thank you. And can you verify the last four digits of your Social Security number for security purposes?
+
+Customer: 7429.
+
+Agent: Perfect, thank you Ms. Johnson. I can see your account here. What specific charge are you questioning?
+
+Customer: There's this thing called "FitLife Premium" for $29.99 that's been charging every month since September. I never signed up for this, I don't even know what it is.
+
+Agent: I can see those charges here - September 15th, October 15th, and November 15th, all for $29.99 to FitLife Premium. Let me look at the merchant details... it appears to be a fitness subscription service. Do you recall making any fitness-related purchases or signing up for any trials around that time?
+
+Customer: No, absolutely not. I would remember something like that. This is clearly fraud or something.
+
+Agent: I understand your frustration. Let me check if we have any additional information about how this merchant obtained your card details. Sometimes these charges can result from online purchases where there are subscription terms in the fine print.
+
+Customer: Look, I'm telling you I never signed up for anything. Can you just reverse these charges and block this company?
+
+Agent: I want to help resolve this for you. I can see the charges originated from an online transaction on September 12th. For recurring charges like this, I'll need to start a formal dispute process. However, I should mention that you'll need to contact FitLife directly first to attempt to cancel the service.
+
+Customer: Why do I have to contact them? They're stealing from me! Isn't that what you're supposed to handle?
+
+Agent: I completely understand your frustration, and you're right that we should protect you from unauthorized charges. Let me put a temporary block on future charges from this merchant right now while we sort this out.
+
+Customer: Okay, good. And what about getting my money back for these three months?
+
+Agent: For the refunds, I can issue provisional credits for the three charges totaling $89.97 while we investigate. However, the credits may be reversed if our investigation determines the charges were authorized.
+
+Customer: What do you mean "if they were authorized"? I'm telling you they weren't!
+
+Agent: I believe you, and I'm not questioning your account of events. It's just our standard process. The provisional credits should appear on your account within 2 business days.
+
+Customer: Fine. So what happens next?
+
+Agent: I'm going to file a dispute case - your reference number will be CD-889432. You should receive a letter within 5-7 business days explaining the process. I do still recommend calling FitLife at the number I can provide to try to cancel directly with them as well.
+
+Customer: This is ridiculous. I shouldn't have to call some company I never did business with. Can't you handle this entirely on your end?
+
+Agent: I wish I could make this simpler for you. Unfortunately, this type of dispute requires investigation by our specialized fraud department, and they may need additional documentation from you. The case could take up to 45 business days to complete.
+
+Customer: 45 days? Are you kidding me? I want to speak to someone with more authority than you.
+
+Agent: I absolutely understand, and I'd be happy to escalate this for you. Let me transfer you to my supervisor who may have additional options available.
+
+Customer: Yes, please do that. This whole situation is unacceptable.
+
+Agent: I'll get them on the line right now. Please hold for just a moment while I brief them on your situation.

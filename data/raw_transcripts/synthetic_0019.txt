@@ -1,0 +1,53 @@
+Agent: Thank you for calling SecureCard customer service, this is agent speaking. How can I help you today?
+
+Customer: Hi, I'm calling because I got completely wrong information from someone there yesterday and now I'm dealing with a mess. My account number is 4478-1192-3345-8821.
+
+Agent: I'm sorry to hear you're having trouble. Let me pull up your account here. Can you tell me what happened yesterday?
+
+Customer: I called about disputing a charge for $387.50 from MegaMart on November 15th. The agent told me it would be automatically reversed within 24 hours and that I didn't need to do anything else.
+
+Agent: Okay, I see the dispute was filed yesterday. Let me check the details here... I'm seeing this was processed as a standard dispute, not an immediate reversal. Can you tell me more about the charge?
+
+Customer: Look, I don't want to go through this whole thing again. Your agent yesterday said it would be reversed today and I could use that credit limit again. I needed to make a large purchase and now my card is getting declined.
+
+Agent: I understand your frustration. Unfortunately, standard disputes typically take 7-10 business days to investigate. The agent may have misspoken about the 24-hour timeframe.
+
+Customer: Misspoken? I specifically asked twice because I needed to know. This is ridiculous. What am I supposed to do now?
+
+Agent: Let me see what options we have. What was the reason for disputing the MegaMart charge?
+
+Customer: I never made that purchase. I was out of town that whole week in Denver for work. I have my hotel receipts and everything.
+
+Agent: That sounds like unauthorized usage. For fraud cases, we can sometimes expedite the process. Let me look at the merchant details... I see this was processed at a MegaMart location in Phoenix. Is that far from where you live?
+
+Customer: I live in Seattle, so yeah, that's nowhere near me. And like I said, I was in Denver for work from November 13th through 17th.
+
+Agent: Given that information, I can escalate this to our fraud department. However, I need to be honest - even expedited fraud cases usually take 3-5 business days, not 24 hours.
+
+Customer: So the other agent was just completely wrong then?
+
+Agent: It appears so, and I apologize for that misinformation. What I can do right now is issue you a temporary credit of $387.50 while we investigate, but it may be reversed if the investigation doesn't go in your favor.
+
+Customer: How long would the temporary credit take?
+
+Agent: The temporary credit would appear on your account within 2-4 hours and restore your available credit limit.
+
+Customer: Okay, that's better than waiting a week. But what if you guys decide against me? I'm telling you I didn't make this purchase.
+
+Agent: If you have documentation showing you were in Denver during that time, I'd recommend faxing or emailing those receipts to our disputes department. That would strengthen your case significantly.
+
+Customer: Fine, I can do that. What's the fax number?
+
+Agent: The disputes fax number is 1-800-555-0147. Make sure to include your account number and reference dispute case ID 9847312.
+
+Customer: 9847312, got it. So I'll see the temporary credit in a few hours?
+
+Agent: Yes, you should see the $387.50 temporary credit within 2-4 hours. Is there anything else I can help you with regarding this dispute?
+
+Customer: I guess that'll have to do for now. I'm still annoyed about getting wrong information yesterday, but at least this helps with my immediate problem.
+
+Agent: I completely understand your frustration, and I've made a note in your account about the misinformation you received. The temporary credit should resolve your immediate credit limit issue.
+
+Customer: Alright, thanks. I'll send those receipts over today.
+
+Agent: Perfect. Thank you for calling SecureCard, and again, I apologize for the confusion yesterday.

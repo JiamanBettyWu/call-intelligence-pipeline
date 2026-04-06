@@ -1,0 +1,73 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Hi, I'm locked out of my online account and I can't get back in. I've been trying for like an hour.
+
+Agent: I'm sorry to hear you're having trouble accessing your account. Can you provide me with your full name and the last four digits of your card number?
+
+Customer: Yeah, it's Sarah Mitchell and the last four are 8429.
+
+Agent: Thank you Sarah. I see your account here, ending in 8429. It looks like your online access has been temporarily suspended due to multiple failed security question attempts. I'll need to verify your identity to help unlock it.
+
+Customer: Great, that's exactly why I'm calling. I honestly can't remember what I put for those security questions. I set this up like three years ago.
+
+Agent: I understand that can be frustrating. Let me try a few other verification methods first. Can you confirm the billing address on your account?
+
+Customer: Sure, it's 1247 Oak Street, apartment 3B, Denver Colorado, 80203.
+
+Agent: Perfect, that matches. Now can you tell me the date and amount of your last payment?
+
+Customer: Um, I think it was sometime last week? Maybe around $180? I usually pay the full balance.
+
+Agent: I show your last payment was on March 15th for $247.83. Can you tell me about any recent transactions on the account?
+
+Customer: Oh shoot, you're right about the amount, I was thinking of a different card. Recent transactions... I bought groceries at King Soopers yesterday for maybe forty something dollars, and I got gas at Shell on Sunday.
+
+Agent: I do see the King Soopers transaction for $43.22 on March 19th, but I'm not showing a Shell transaction on Sunday the 17th.
+
+Customer: Hmm, maybe that was my debit card then. Look, I clearly know enough about this account. Can't you just unlock it?
+
+Agent: I understand your frustration, but for security purposes I need to try the security questions. The system requires it for online access restoration.
+
+Customer: Fine, but I'm telling you I don't remember what I put. Go ahead.
+
+Agent: What is the name of your first pet?
+
+Customer: I think I put... Buddy? Or maybe it was Whiskers? I had both growing up.
+
+Agent: I'm sorry, neither of those match. Let me try the second question. What is your mother's maiden name?
+
+Customer: That one I should know. Johnson.
+
+Agent: That's not matching either. I have one more question. What was the make of your first car?
+
+Customer: Honda. Definitely Honda.
+
+Agent: I'm sorry Sarah, that's also incorrect. With three failed attempts, I'm unable to unlock your online access at this level.
+
+Customer: This is ridiculous! I've given you my address, payment information, transaction details. What more do you want?
+
+Agent: I completely understand your frustration. You've verified enough information to confirm your identity, but the online access unlock requires either the security questions or additional verification that I can't perform at my level.
+
+Customer: So what are you saying? I can never access my account online again?
+
+Agent: Not at all. I need to escalate this to our Account Security team. They have additional tools and authority to restore your access after a more thorough identity verification process.
+
+Customer: How long is that going to take? I need to check my account and make a payment.
+
+Agent: The Account Security team typically contacts customers within 24 to 48 business hours. In the meantime, you can make payments by phone or mail, and I can give you your current balance and minimum payment due.
+
+Customer: Ugh, fine. What's my balance?
+
+Agent: Your current balance is $1,847.62 and your minimum payment of $45 is due March 28th.
+
+Customer: Okay, and someone will definitely call me in the next couple days?
+
+Agent: Yes, I'm creating a high-priority case now. Case number SC-7749-2024. They'll call the phone number we have on file ending in 5521.
+
+Customer: That's my cell, yeah. I guess that'll have to work.
+
+Agent: I've escalated your case to Account Security and they'll be able to help restore your online access. Is there anything else I can help you with today?
+
+Customer: No, I guess not. Thanks for trying at least.
+
+Agent: You're welcome Sarah. You should receive a call within two business days. Have a good day.

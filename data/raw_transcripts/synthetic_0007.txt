@@ -1,0 +1,49 @@
+Agent: Thank you for calling First National Credit Services, this is customer service. How can I help you today?
+
+Customer: Hi, I'm calling about my account ending in 7842. I got this letter in the mail saying my credit limit was reduced and I have no idea why.
+
+Agent: I can definitely help you look into that. Can I get your full account number and the last four digits of your social security number to verify your account?
+
+Customer: Sure, it's 4891-2356-7731-7842 and my social is ending in 9847.
+
+Agent: Perfect, I have your account pulled up here Mr. Johnson. I can see that on March 15th your credit limit was reduced from $8,500 down to $3,200. This was due to our routine account review process.
+
+Customer: Routine account review? What does that even mean? I've had this card for six years and never missed a payment.
+
+Agent: I understand your frustration. The review takes into account various factors including credit bureau information, spending patterns, and overall risk assessment. I can see your payment history is excellent, but there may have been changes in your credit profile that triggered this adjustment.
+
+Customer: This is ridiculous. I use this card for business expenses and now I'm going to go over my limit. Can you just change it back?
+
+Agent: I wish I could make that change right away, but credit limit increases require a new credit evaluation. I can submit a request for you, but it would take 7-10 business days for a decision.
+
+Customer: Seven to ten days? I have a business trip next week and I'm already at $2,800 on this card. What am I supposed to do in the meantime?
+
+Agent: I completely understand the urgency. Let me see what options we have. I could potentially set up a payment plan if you're able to make a payment to bring the balance down, or I can check if we have any temporary solutions.
+
+Customer: I shouldn't have to make extra payments because you guys randomly cut my limit in half! This is affecting my credit score too, isn't it?
+
+Agent: You're right to be concerned about that. When your credit utilization goes up due to a limit decrease, it can impact your score. I'm going to escalate this to our credit department to see if they can provide more information about the specific reason for the reduction.
+
+Customer: Good, because this makes no sense. My income actually went up this year and I got a raise in January.
+
+Agent: That's great information to have. Income increases can definitely support a limit restoration. I'm putting in a priority review request and flagging that your income has increased. Do you have documentation of your new income level?
+
+Customer: I can get my recent pay stubs. How do I send those to you?
+
+Agent: You can upload them through our secure portal online, or fax them to 555-0199 with your account number. I'm also going to give you a reference number for this case: CR-78429.
+
+Customer: Okay, so what happens now? I still need to use my card next week.
+
+Agent: Here's what I can do immediately - I'm setting up a balance alert at $3,150 so you'll know if you're getting close to your limit. For next week, you might want to consider using a different payment method if possible, or making a payment before your trip to create more available credit.
+
+Customer: This is really inconvenient, but I guess that's better than nothing. When will I hear back about the review?
+
+Agent: You should get a decision within 5-7 business days once you submit your income documentation. I'm also adding a note that this is time-sensitive due to your upcoming business travel.
+
+Customer: Alright, I'll upload the pay stubs today. But if this doesn't get resolved, I'm seriously considering closing this account and going somewhere else.
+
+Agent: I completely understand your frustration, and I hope we can resolve this for you. Is there anything else I can help you with regarding your account today?
+
+Customer: No, I think that covers it. I just hope this gets fixed quickly.
+
+Agent: I've documented everything we discussed today, and you have that reference number CR-78429. Thank you for being a valued customer, and we'll be in touch soon about your credit review.

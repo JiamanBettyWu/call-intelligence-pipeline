@@ -1,0 +1,61 @@
+Agent: Thank you for calling SecureCard customer service, this is speaking. How can I help you today?
+
+Customer: Hi, I'm calling about my account ending in 4782. I got my statement yesterday and there's this weird charge I don't recognize.
+
+Agent: I'd be happy to help you look into that. Can you provide me with the full account number for verification?
+
+Customer: Sure, it's 4491-2837-6554-4782.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 8329.
+
+Agent: Perfect, I have your account pulled up here, Mr. Johnson. What charge are you questioning?
+
+Customer: There's a $39 fee on February 8th that just says "account maintenance fee" or something like that. I've never seen this before.
+
+Agent: Let me take a look at that for you. I see the charge you're referring to - it's a $39 annual fee that posted on February 8th for your SecureCard Platinum Rewards card.
+
+Customer: Annual fee? What do you mean annual fee? I've had this card for three years and never paid an annual fee.
+
+Agent: I understand your confusion. Looking at your account history, I can see that when you opened the account in March 2021, you received a promotional offer that waived the annual fee for the first two years.
+
+Customer: Nobody told me there was going to be an annual fee after that! This is ridiculous. If I knew there was a fee I never would have gotten this card in the first place.
+
+Agent: I apologize for any confusion about the fee structure. The annual fee information would have been included in your cardholder agreement when you first opened the account.
+
+Customer: Look, I don't remember getting any agreement about fees. All I remember is being told there was no annual fee. Can you just remove this charge?
+
+Agent: I understand your frustration, and I want to help resolve this for you. Let me see what options I have available. The annual fee is a standard feature of the Platinum Rewards card, but given that this seems to have caught you off guard, I may be able to make a one-time courtesy adjustment.
+
+Customer: Okay, that would be great. I just think it's really misleading to not clearly explain these fees upfront.
+
+Agent: I completely understand your concern, and I apologize for the confusion. I'm able to process a one-time courtesy credit of $39 to reverse this annual fee charge. This credit will appear on your account within 24 hours.
+
+Customer: So it'll be completely removed?
+
+Agent: Yes, exactly. The $39 annual fee will be fully credited back to your account. However, I do want to let you know that going forward, this annual fee would typically apply each year in February.
+
+Customer: Well, what are my options if I don't want to pay an annual fee going forward?
+
+Agent: You have a couple of options. You could downgrade to our SecureCard Classic card, which has no annual fee but different rewards structure, or you could keep the Platinum card and the annual fee would apply next February.
+
+Customer: What's the difference in rewards between the two cards?
+
+Agent: Your current Platinum card earns 2% cash back on all purchases, while the Classic card earns 1% cash back on all purchases. The Platinum also includes travel insurance benefits that the Classic doesn't have.
+
+Customer: Hmm, okay. Can I think about it and call back to downgrade later if I want to?
+
+Agent: Absolutely. You can call back anytime to discuss your options. The credit for the annual fee will post to your account, and you'll have plenty of time to decide what works best for you before next February.
+
+Customer: Alright, that sounds fair. So just to confirm, the $39 will be credited back to my account?
+
+Agent: That's correct. You'll see a $39 credit appear on your account within 24 hours, and your account balance will reflect that adjustment.
+
+Customer: Okay great, thank you for taking care of that. I appreciate you working with me on this.
+
+Agent: You're very welcome. Is there anything else I can help you with today regarding your account?
+
+Customer: No, that covers it. Thanks again.
+
+Agent: Perfect. Thank you for calling SecureCard, and have a great day!

@@ -1,0 +1,47 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Yeah, hi. I called last week about my cash advance limit and the agent told me I could take out up to $3,000, but when I tried to use the ATM yesterday it was declined for $1,500. What's going on?
+
+Agent: I'm sorry to hear about that inconvenience. Let me pull up your account to take a look. Can you provide me with your account number?
+
+Customer: It's 4532-1178-9234-5671.
+
+Agent: Perfect, thank you. And can you verify the last four digits of your social security number for security purposes?
+
+Customer: 7429.
+
+Agent: Great, I have your account pulled up here. I can see you have the SecureCard Platinum card with us. Let me check your cash advance limit... I'm showing your current cash advance limit is $1,000, not $3,000.
+
+Customer: That's exactly the problem! The agent I spoke with last Tuesday said it was $3,000. I specifically asked because I needed to take out $2,500 for some home repairs this week.
+
+Agent: I understand your frustration, and I apologize for the misinformation you received. Let me look at the notes from that previous call... I can see there was a call on March 14th, and unfortunately it looks like the agent may have confused your credit limit, which is $8,000, with your cash advance limit.
+
+Customer: So what am I supposed to do now? I already made commitments based on what your agent told me. This is really inconvenient.
+
+Agent: I completely understand, and I want to make this right for you. Let me see what options we have. Looking at your account history, you've been a customer for over three years with excellent payment history. I may be able to request a cash advance limit increase for you.
+
+Customer: How long would that take? I needed this money yesterday.
+
+Agent: Typically these requests take 3-5 business days, but given the circumstances and the error on our part, let me see if I can expedite this. What amount would you ideally need your cash advance limit increased to?
+
+Customer: Well, the agent said $3,000, so that would work. I mean, I only need $2,500 right now but having a little buffer would be good.
+
+Agent: Let me submit an expedited review request for a cash advance limit increase to $3,000. I'm noting in the system that this is due to agent misinformation... Okay, I've submitted that request and I'm seeing it's been approved immediately.
+
+Customer: Wait, really? Just like that?
+
+Agent: Yes, given your excellent account standing and the fact that this was our error, the system approved it right away. Your new cash advance limit is now $3,000, effective immediately.
+
+Customer: Oh wow, okay. So I can go to the ATM right now and take out the $2,500?
+
+Agent: You should be able to, yes. The system update usually takes about 15-20 minutes to propagate to all ATM networks, so I'd recommend waiting about 30 minutes just to be safe.
+
+Customer: Alright, that's actually better than I expected. I'm sorry for being a bit snippy earlier, I was just frustrated.
+
+Agent: No need to apologize at all - your frustration was completely understandable. Is there anything else I can help you with today?
+
+Customer: No, I think that covers it. Thanks for actually fixing this instead of just passing the buck.
+
+Agent: Of course, that's what we're here for. You should receive an email confirmation of the limit increase within the next hour. Have a great day!
+
+Customer: You too, thanks again.

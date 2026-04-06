@@ -1,0 +1,53 @@
+Agent: Thank you for calling First National Credit Services, this is your customer service representative. How can I help you today?
+
+Customer: Yeah, hi. I'm looking at my statement and there's a twenty-five dollar late fee on here that I don't think should be there. I paid my bill on time.
+
+Agent: I'd be happy to look into that for you. Can I get your account number please?
+
+Customer: It's 4782-9156-3847-2201.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 7394.
+
+Agent: Perfect, thank you. I'm looking at your Platinum Rewards account here. I can see the late fee you're referring to from your March statement. It looks like your payment was due on March 15th for $247.83, and we received your payment on March 18th.
+
+Customer: That's impossible. I always pay my bills on time. I set up the payment online on March 13th.
+
+Agent: I understand your frustration. Let me look at the payment details more closely. I can see that you did initiate an online payment on March 13th, but it was scheduled as an e-check from your checking account, which takes 3-5 business days to process.
+
+Customer: Well nobody told me that! When I pay online it should go through right away.
+
+Agent: I can see how that would be confusing. There are different payment options - credit card payments and express payments post immediately, but standard e-check payments do take several business days to clear.
+
+Customer: This is ridiculous. I've been a customer for eight years and I've never been late. You should waive this fee.
+
+Agent: I absolutely understand, and I can see you do have an excellent payment history with us. Let me review your account to see what options I have available.
+
+Customer: I mean, I paid it two days early from my perspective. How was I supposed to know it would take that long?
+
+Agent: You're absolutely right that this can be confusing, especially for first-time online payments. I'm looking at your payment history and I see this is actually your first time using our online system - you typically mail in your payments.
+
+Customer: Right, I was trying to be more convenient and pay online and this is what happens.
+
+Agent: I can definitely understand your frustration with that. Given your excellent eight-year payment history and the fact that this was a misunderstanding with your first online payment, I'm able to issue a one-time courtesy credit for the late fee.
+
+Customer: Okay, well good. So you're removing the twenty-five dollars?
+
+Agent: Yes, I'm processing that credit right now. You'll see a $25.00 late fee reversal on your next statement, and it should also show up in your online account within 24 hours.
+
+Customer: And this won't affect my credit score or anything?
+
+Agent: No, since I'm removing the late fee entirely, there won't be any negative impact on your credit. Is there anything else I can help you with today?
+
+Customer: No, that takes care of it. And just so I know for next time, how do I make sure the payment goes through right away?
+
+Agent: For immediate posting, you can either use the express payment option online for a small fee, or you can pay by phone. Both of those post the same day if made before 8 PM Eastern.
+
+Customer: Got it. Thanks for taking care of this.
+
+Agent: You're very welcome. Thank you for being a loyal customer, and have a great day.
+
+Customer: You too, bye.
+
+Agent: Goodbye.

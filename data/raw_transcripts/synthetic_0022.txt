@@ -1,0 +1,63 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Hi, yeah I'm locked out of my online account and I can't get back in. It's asking me these security questions and I have no idea what the answers are.
+
+Agent: I'm sorry to hear you're having trouble accessing your account. I'll be happy to help you with that. Can I start by getting your full account number?
+
+Customer: Sure, it's 4521-8836-7429-1053.
+
+Agent: Thank you. And can you verify your full name and date of birth for me?
+
+Customer: Jennifer Martinez, date of birth is March 15th, 1987.
+
+Agent: Perfect, thank you Ms. Martinez. I can see your account here. It looks like after three failed attempts at your security questions, the system automatically locked your online access for security purposes. When was the last time you successfully logged in?
+
+Customer: I don't know, maybe two months ago? I usually just use autopay so I don't log in that often. But now I need to check something and I'm completely stuck.
+
+Agent: I understand. Let me see what security questions you have set up. I'm showing questions about your first pet's name and the city where you met your spouse. Do either of those ring a bell?
+
+Customer: Oh god, the pet one... I've had so many pets over the years. And honestly I'm not even sure which city I put for that other one. We've moved around a lot. This is really frustrating.
+
+Agent: I completely understand the frustration. Let me see what other options I have to verify your identity. Can you confirm the last payment amount and date on your account?
+
+Customer: Um, let me check my bank statement... okay I see a payment to SecureCard on January 18th for $247.83.
+
+Agent: That matches our records perfectly. And what's the current balance showing on your account from your last statement?
+
+Customer: I don't have the statement in front of me right now. Can't you just reset this stuff since I gave you my account number and personal info?
+
+Agent: I wish I could make it that simple, but for security purposes I need to verify a few more details. Can you tell me what your current credit limit is on this card?
+
+Customer: I think it's $8,500. Pretty sure that's what it's been for the last couple years.
+
+Agent: That's correct. Okay, based on the verification we've completed, I can help you reset your security questions, but I'll need to send you a temporary verification code to complete the process. Do you still have the same mobile phone number ending in 7429?
+
+Customer: Wait, that's not my phone number, that's part of my credit card number. My phone ends in 3891.
+
+Agent: You're absolutely right, I apologize for that confusion. So your mobile number ending in 3891 - is that still current?
+
+Customer: Yes, that's my current number.
+
+Agent: Great. I can send you a verification code to that number, and once you enter that code online, you'll be able to set up new security questions. However, I do need to let you know that there will be a 24-hour waiting period before your new questions become active.
+
+Customer: So I still can't access my account today? I really need to check on a transaction from last week.
+
+Agent: I can help you with checking on that transaction right now over the phone. What specific transaction were you looking to review?
+
+Customer: There was a charge at some restaurant called Milano's Bistro for like $89, and I don't remember going there. I wanted to dispute it if it's fraud.
+
+Agent: Let me pull up your recent transactions. I do see a charge for Milano's Bistro on January 22nd for $89.47. Would you like me to start a dispute investigation on that charge?
+
+Customer: Actually, wait... January 22nd... that was my anniversary dinner. Never mind, that's legitimate. I just forgot the name of the restaurant.
+
+Agent: No problem at all, happens to the best of us. So I'll send that verification code to your phone now, and you should be able to reset your security questions within the next few minutes, though remember they won't be active until tomorrow.
+
+Customer: Okay, that works I guess. Will I get an email confirmation or something?
+
+Agent: Yes, you'll receive an email confirmation once you've successfully reset your security questions. Is there anything else I can help you with today?
+
+Customer: No, I think that covers it. Thanks for your help, even though this whole security question thing is kind of a pain.
+
+Agent: I understand completely. The verification code should arrive within the next few minutes. Have a great day, Ms. Martinez.
+
+Customer: Thanks, you too.

@@ -1,0 +1,51 @@
+Agent: Thank you for calling SecureCard customer service, this is your representative speaking. How can I help you today?
+
+Customer: Hi, yeah, I'm having trouble with my online account. I can't access the spending tracker feature that I've been using for months now.
+
+Agent: I'd be happy to help you with that. Can I get your account number please?
+
+Customer: Sure, it's 4847-2156-9033-8821.
+
+Agent: Thank you. And can you verify the last four digits of your social security number for me?
+
+Customer: 7392.
+
+Agent: Perfect, thank you Mr. Johnson. I see your Platinum Rewards account here. You mentioned you're having trouble with the spending tracker?
+
+Customer: Yeah, exactly. I use it every week to monitor my categories and it's just... gone. Like the whole section disappeared from my dashboard.
+
+Agent: I understand how frustrating that must be. When did you first notice this issue?
+
+Customer: About three days ago, so that would be Monday the 15th. I logged in like I always do and the spending insights tab just wasn't there anymore.
+
+Agent: Okay, let me check your account settings here. Are you logging in through the mobile app or the website?
+
+Customer: The website, same as always. I tried the app too but it's the same thing there.
+
+Agent: I see what's happening. It looks like there was a system update last weekend and some accounts got their premium features temporarily disabled. Your spending tracker is part of our SecureInsights package.
+
+Customer: Wait, what do you mean disabled? I've had this card for two years and I've always had access to that feature.
+
+Agent: You're absolutely right, and I apologize for the inconvenience. This was an error on our end during the update. Let me re-enable those features for you right now.
+
+Customer: Okay, but how do I know this won't happen again? I rely on those reports for my monthly budgeting.
+
+Agent: I completely understand your concern. I'm adding a note to your account about this issue, and I'm also going to escalate this to our technical team so they can prevent it from happening to other customers.
+
+Customer: Alright, so you're fixing it now?
+
+Agent: Yes, I'm re-activating your SecureInsights access... okay, that's done. You should see the spending tracker back in your dashboard within the next few minutes.
+
+Customer: And all my historical data will still be there? I've got months of tracking in there.
+
+Agent: Absolutely, none of your data was lost. It was just a display issue. Your spending categories, trends, everything should be exactly as you left it.
+
+Customer: Okay good. Let me log in real quick... yeah, I can see it now. All my October spending is there, the $1,247 total and all the category breakdowns.
+
+Agent: Excellent! Is there anything else I can help you with today regarding your account?
+
+Customer: No, that's it. Thanks for getting that sorted out quickly.
+
+Agent: You're very welcome, Mr. Johnson. Again, I apologize for the inconvenience, and thank you for choosing SecureCard. Have a great day.
+
+Customer: You too, bye.

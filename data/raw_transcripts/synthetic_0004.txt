@@ -1,0 +1,61 @@
+Agent: Thank you for calling FirstNational Credit Services, this is customer support. How can I help you today?
+
+Customer: Yeah, hi. I'm trying to log into my online account and it keeps saying my account is locked. I've been trying for like an hour and it's really frustrating.
+
+Agent: I'm sorry to hear you're having trouble accessing your account. I can definitely help you with that. Can you provide me with your credit card number or the last four digits?
+
+Customer: The last four are 7842. 
+
+Agent: Thank you. And can you verify your full name and zip code for me?
+
+Customer: Sarah Mitchell, zip code 94103.
+
+Agent: Perfect, thank you Ms. Mitchell. I can see your Platinum Rewards card account here. Let me check the status... yes, I do see that your online account was locked this morning at 8:47 AM. It looks like there were multiple failed login attempts.
+
+Customer: That's ridiculous though. I know my password. I've been using the same one for months.
+
+Agent: I understand your frustration. Sometimes this can happen if the password was recently changed or if there were any security updates to our system. When was the last time you successfully logged in?
+
+Customer: I think it was maybe three days ago? I was checking my balance because I had a large purchase - that furniture set for $1,247 at Ashley HomeStore.
+
+Agent: Okay, I can see that transaction from March 15th. Let me unlock your account for you right now. This will take just a moment... Alright, your account is now unlocked.
+
+Customer: Great, so I can log in now?
+
+Agent: You should be able to, but you'll need to reset your password. I can see there might be a technical issue on our end that's been affecting some accounts since yesterday.
+
+Customer: Seriously? So this isn't even my fault?
+
+Agent: No ma'am, it appears to be related to a system update we performed. I apologize for the inconvenience. I'm going to send a password reset link to the email we have on file - that's sarah.mitchell.email at gmail dot com, correct?
+
+Customer: Yes, that's right. How long will that take?
+
+Agent: You should receive it within 5 to 10 minutes. Once you click the link and create a new password, you should be able to access your account normally.
+
+Customer: And what if I still can't get in?
+
+Agent: If you continue to have issues, there's a possibility the problem is related to our mobile app or website having some ongoing technical difficulties. Our IT team is working on it, but it might not be fully resolved until tomorrow morning.
+
+Customer: Oh come on. I need to pay my bill - it's due on the 22nd and I don't want any late fees.
+
+Agent: I completely understand. Your current balance is $2,847.63 and your minimum payment of $87 is due March 22nd. If you'd like, I can process a payment for you over the phone right now to make sure you're not charged any late fees.
+
+Customer: Yeah, I guess I'll have to do that. I want to pay $500.
+
+Agent: Perfect. I can process that $500 payment from your checking account ending in 4521 that we have on file. Is that correct?
+
+Customer: Yes, that's fine.
+
+Agent: Alright, I've processed that payment. You'll see it reflected on your account within 1-2 business days, and your new balance will be $2,347.63.
+
+Customer: Okay good. But I still want to be able to log in to check my account online.
+
+Agent: Absolutely. Try the password reset email first, and if you're still having trouble logging in after creating a new password, I'd recommend calling back tomorrow afternoon. Our technical team expects the remaining login issues to be resolved by then.
+
+Customer: Alright, I guess that'll have to work. This has been a real pain though.
+
+Agent: I sincerely apologize for the trouble, Ms. Mitchell. Is there anything else I can help you with today?
+
+Customer: No, I think that's it. Thanks for processing the payment at least.
+
+Agent: You're welcome. Have a good rest of your day.

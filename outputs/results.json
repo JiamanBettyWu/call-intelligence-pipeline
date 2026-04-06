@@ -1,0 +1,995 @@
+{
+  "results": [
+    {
+      "transcript_id": "synthetic_0000",
+      "summary": "The customer called about two unauthorized $29.99 charges from \"FitFlow Premium\" on their credit card statement that they never signed up for. The agent initiated a dispute for both the October and November charges totaling $59.98, provided a temporary credit within 1-2 business days, and blocked future charges from that merchant. The call ended with the customer receiving a dispute reference number (DP-887432) and confirmation that they would receive an email with the details.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer is disputing recurring charges from FitFlow Premium that they claim they never authorized, which constitutes unauthorized charges on their account.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's unauthorized charge issue was effectively addressed with disputes filed for both charges, temporary credits provided, future charges blocked, and a clear process outlined with reference number.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 11.11,
+      "raw_outputs": {
+        "summary": "The customer called about two unauthorized $29.99 charges from \"FitFlow Premium\" on their credit card statement that they never signed up for. The agent initiated a dispute for both the October and November charges totaling $59.98, provided a temporary credit within 1-2 business days, and blocked future charges from that merchant. The call ended with the customer receiving a dispute reference number (DP-887432) and confirmation that they would receive an email with the details.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer is disputing recurring charges from FitFlow Premium that they claim they never authorized, which constitutes unauthorized charges on their account."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.9,
+          "notes": "The customer's unauthorized charge issue was effectively addressed with disputes filed for both charges, temporary credits provided, future charges blocked, and a clear process outlined with reference number."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0001",
+      "summary": "The customer called about a fraudulent $347.82 charge from TechWorld Electronics in Denver that they didn't recognize, and questioned a $156.43 Best Buy charge they were uncertain about. The agent initiated a dispute for the TechWorld charge, issued a provisional credit, and canceled the customer's card with a replacement arriving in 7-10 business days, but advised the customer to verify the Best Buy transaction independently before disputing it. The call ended with the customer accepting this resolution while expressing frustration about the inconvenience of being without a card for a week.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer's primary complaint is about a $347.82 charge at TechWorld Electronics that they claim they never made and occurred in a location they've never been to, which is a clear case of suspected fraudulent activity.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "neutral",
+        "end": "negative"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's primary concern about the fraudulent TechWorld Electronics charge was addressed with a dispute filed and provisional credit arranged, though the Best Buy transaction remains unresolved by the customer's choice.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 11.53,
+      "raw_outputs": {
+        "summary": "The customer called about a fraudulent $347.82 charge from TechWorld Electronics in Denver that they didn't recognize, and questioned a $156.43 Best Buy charge they were uncertain about. The agent initiated a dispute for the TechWorld charge, issued a provisional credit, and canceled the customer's card with a replacement arriving in 7-10 business days, but advised the customer to verify the Best Buy transaction independently before disputing it. The call ended with the customer accepting this resolution while expressing frustration about the inconvenience of being without a card for a week.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer's primary complaint is about a $347.82 charge at TechWorld Electronics that they claim they never made and occurred in a location they've never been to, which is a clear case of suspected fraudulent activity."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "neutral",
+          "end": "negative"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.8,
+          "notes": "The customer's primary concern about the fraudulent TechWorld Electronics charge was addressed with a dispute filed and provisional credit arranged, though the Best Buy transaction remains unresolved by the customer's choice."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0002",
+      "summary": "The customer called because the spending tracker feature on their online account dashboard had disappeared after working properly for months since March. The agent verified the customer's account, attempted to refresh the account features, but was unable to resolve the technical issue and escalated it to the technical support team, creating priority case TS-2024-8842. The call ended with the agent informing the customer that technical support would contact them within 24-48 hours at their phone number on file.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's spending tracker feature suddenly stopped displaying on their dashboard despite working properly for months, which the agent confirmed appears to be a technical system problem that requires escalation to the technical support team.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "very_negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's core issue with the missing spending tracker feature was not fixed during the call and was escalated to technical support with no immediate solution provided.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 8.8,
+      "raw_outputs": {
+        "summary": "The customer called because the spending tracker feature on their online account dashboard had disappeared after working properly for months since March. The agent verified the customer's account, attempted to refresh the account features, but was unable to resolve the technical issue and escalated it to the technical support team, creating priority case TS-2024-8842. The call ended with the agent informing the customer that technical support would contact them within 24-48 hours at their phone number on file.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's spending tracker feature suddenly stopped displaying on their dashboard despite working properly for months, which the agent confirmed appears to be a technical system problem that requires escalation to the technical support team."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "very_negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.9,
+          "notes": "The customer's core issue with the missing spending tracker feature was not fixed during the call and was escalated to technical support with no immediate solution provided."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0003",
+      "summary": "The customer called because they were told by an agent last week that their cash advance limit was $3,000, but their ATM withdrawal for $1,500 was declined. The agent discovered the previous agent had mistakenly given the customer incorrect information about their cash advance limit, which was actually $1,000, and successfully processed an expedited increase to $3,000 due to the error and the customer's excellent account history. The call ended with the customer satisfied after receiving immediate approval for the limit increase and being advised to wait 30 minutes before attempting the ATM withdrawal.",
+      "root_cause_category": "agent_error_or_misinformation",
+      "root_cause_explanation": "The customer's complaint stems from a previous agent incorrectly telling them their cash advance limit was $3,000 when it was actually $1,000, causing the customer to make financial commitments based on false information.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The customer's core issue was resolved as the agent corrected the misinformation about the cash advance limit by immediately approving an increase to $3,000, allowing the customer to access the needed funds.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.16,
+      "raw_outputs": {
+        "summary": "The customer called because they were told by an agent last week that their cash advance limit was $3,000, but their ATM withdrawal for $1,500 was declined. The agent discovered the previous agent had mistakenly given the customer incorrect information about their cash advance limit, which was actually $1,000, and successfully processed an expedited increase to $3,000 due to the error and the customer's excellent account history. The call ended with the customer satisfied after receiving immediate approval for the limit increase and being advised to wait 30 minutes before attempting the ATM withdrawal.",
+        "category": {
+          "category": "agent_error_or_misinformation",
+          "explanation": "The customer's complaint stems from a previous agent incorrectly telling them their cash advance limit was $3,000 when it was actually $1,000, causing the customer to make financial commitments based on false information."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The customer's core issue was resolved as the agent corrected the misinformation about the cash advance limit by immediately approving an increase to $3,000, allowing the customer to access the needed funds."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0004",
+      "summary": "The customer contacted support because her online account was locked and she couldn't log in despite multiple attempts over an hour. The agent unlocked her account, explained the issue was caused by a system update on the company's end, sent a password reset email, and processed a $500 payment over the phone when the customer expressed concern about avoiding late fees. The call ended with the agent advising the customer to try the password reset and call back tomorrow afternoon if she still experiences login issues after the technical problems are fully resolved.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's account was locked due to a system update that caused technical difficulties with login functionality, which the agent confirmed was an ongoing IT issue affecting multiple accounts.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's core issues were addressed - the account was unlocked, payment was processed to avoid late fees, and a clear path forward was provided for the remaining login problem.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.54,
+      "raw_outputs": {
+        "summary": "The customer contacted support because her online account was locked and she couldn't log in despite multiple attempts over an hour. The agent unlocked her account, explained the issue was caused by a system update on the company's end, sent a password reset email, and processed a $500 payment over the phone when the customer expressed concern about avoiding late fees. The call ended with the agent advising the customer to try the password reset and call back tomorrow afternoon if she still experiences login issues after the technical problems are fully resolved.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's account was locked due to a system update that caused technical difficulties with login functionality, which the agent confirmed was an ongoing IT issue affecting multiple accounts."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.8,
+          "notes": "The customer's core issues were addressed - the account was unlocked, payment was processed to avoid late fees, and a clear path forward was provided for the remaining login problem."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0005",
+      "summary": "The customer called to dispute a $39 late fee, claiming their autopay failed due to a technical issue rather than insufficient funds as indicated by their bank's return code. The agent explained the company's policy that late fees can only be waived for documented bank errors or system issues on their end, and offered to set up account alerts, but the customer refused this solution. The call ended with the agent transferring the customer to a supervisor after the customer threatened to close their account if the fee wasn't removed.",
+      "root_cause_category": "billing_dispute",
+      "root_cause_explanation": "The customer is disputing a $39 late fee charge, arguing it was assessed unfairly due to what they believe was a bank error rather than their own insufficient funds, and requesting the fee be waived based on their long payment history.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "very_negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's core issue (getting the late fee waived) was not addressed by the agent and was escalated to a supervisor without any resolution provided.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 8.44,
+      "raw_outputs": {
+        "summary": "The customer called to dispute a $39 late fee, claiming their autopay failed due to a technical issue rather than insufficient funds as indicated by their bank's return code. The agent explained the company's policy that late fees can only be waived for documented bank errors or system issues on their end, and offered to set up account alerts, but the customer refused this solution. The call ended with the agent transferring the customer to a supervisor after the customer threatened to close their account if the fee wasn't removed.",
+        "category": {
+          "category": "billing_dispute",
+          "explanation": "The customer is disputing a $39 late fee charge, arguing it was assessed unfairly due to what they believe was a bank error rather than their own insufficient funds, and requesting the fee be waived based on their long payment history."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "very_negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.9,
+          "notes": "The customer's core issue (getting the late fee waived) was not addressed by the agent and was escalated to a supervisor without any resolution provided."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0006",
+      "summary": "The customer was locked out of their online account after multiple failed attempts at answering security questions about their first pet's name and childhood street. The agent verified the customer's identity through card number, Social Security number, billing address, credit limit, and recent payment information, then unlocked the account and reset the security questions. The call ended successfully with the customer able to log in immediately and thanking the agent for the easy resolution.",
+      "root_cause_category": "account_access",
+      "root_cause_explanation": "The customer's primary issue was being locked out of their online account due to forgotten security question answers, preventing them from accessing their account.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "neutral",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The agent successfully unlocked the customer's account after proper verification and reset the security questions, directly addressing the core issue that prevented the customer from accessing their online account.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 7.88,
+      "raw_outputs": {
+        "summary": "The customer was locked out of their online account after multiple failed attempts at answering security questions about their first pet's name and childhood street. The agent verified the customer's identity through card number, Social Security number, billing address, credit limit, and recent payment information, then unlocked the account and reset the security questions. The call ended successfully with the customer able to log in immediately and thanking the agent for the easy resolution.",
+        "category": {
+          "category": "account_access",
+          "explanation": "The customer's primary issue was being locked out of their online account due to forgotten security question answers, preventing them from accessing their account."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "neutral",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The agent successfully unlocked the customer's account after proper verification and reset the security questions, directly addressing the core issue that prevented the customer from accessing their online account."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0007",
+      "summary": "The customer called about his credit limit being unexpectedly reduced from $8,500 to $3,200 due to a routine account review, which he was frustrated about since he had never missed a payment and his income had actually increased. The agent explained the reduction was based on various risk factors, set up a balance alert, and submitted a priority review request for a credit limit increase that would require the customer to upload income documentation. The call ended with the customer receiving reference number CR-78429 and being told he would get a decision within 5-7 business days after submitting his pay stubs.",
+      "root_cause_category": "policy_disagreement",
+      "root_cause_explanation": "The customer is fundamentally disagreeing with the company's policy and decision to reduce their credit limit through a routine account review process, despite their good payment history and improved financial situation.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "neutral"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "While the agent provided a clear process for addressing the credit limit reduction through documentation submission and escalation, the customer's core problem of having their credit limit unexpectedly reduced remains unresolved and requires waiting 5-7 business days for a decision.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.84,
+      "raw_outputs": {
+        "summary": "The customer called about his credit limit being unexpectedly reduced from $8,500 to $3,200 due to a routine account review, which he was frustrated about since he had never missed a payment and his income had actually increased. The agent explained the reduction was based on various risk factors, set up a balance alert, and submitted a priority review request for a credit limit increase that would require the customer to upload income documentation. The call ended with the customer receiving reference number CR-78429 and being told he would get a decision within 5-7 business days after submitting his pay stubs.",
+        "category": {
+          "category": "policy_disagreement",
+          "explanation": "The customer is fundamentally disagreeing with the company's policy and decision to reduce their credit limit through a routine account review process, despite their good payment history and improved financial situation."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.8,
+          "notes": "While the agent provided a clear process for addressing the credit limit reduction through documentation submission and escalation, the customer's core problem of having their credit limit unexpectedly reduced remains unresolved and requires waiting 5-7 business days for a decision."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0008",
+      "summary": "The customer called about unauthorized recurring charges of $29.99 for \"FitLife Premium\" that had been appearing monthly for three months, which she insisted she never signed up for. The agent placed a block on future charges from the merchant, issued provisional credits totaling $89.97 for the disputed charges, and opened a dispute case (reference number CD-889432) that could take up to 45 business days to resolve. The call ended with the customer requesting to speak to a supervisor due to frustration with the process, and the agent transferring her to their supervisor.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer is disputing recurring monthly charges from FitLife Premium that she claims she never authorized, which the agent is treating as a potential fraud case requiring investigation and provisional credits.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "very_negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The call was escalated to a supervisor without reaching a conclusion, leaving the customer's core concerns about the dispute process and timeline unaddressed.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.63,
+      "raw_outputs": {
+        "summary": "The customer called about unauthorized recurring charges of $29.99 for \"FitLife Premium\" that had been appearing monthly for three months, which she insisted she never signed up for. The agent placed a block on future charges from the merchant, issued provisional credits totaling $89.97 for the disputed charges, and opened a dispute case (reference number CD-889432) that could take up to 45 business days to resolve. The call ended with the customer requesting to speak to a supervisor due to frustration with the process, and the agent transferring her to their supervisor.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer is disputing recurring monthly charges from FitLife Premium that she claims she never authorized, which the agent is treating as a potential fraud case requiring investigation and provisional credits."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "very_negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.8,
+          "notes": "The call was escalated to a supervisor without reaching a conclusion, leaving the customer's core concerns about the dispute process and timeline unaddressed."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0009",
+      "summary": "The customer called to report an unauthorized charge of $347.89 from \"TechWorld Solutions\" that appeared on their credit card statement on December 15th. The agent filed the transaction as fraudulent, issued a provisional credit to reverse the charge within 24 hours, and arranged for an expedited replacement card to be delivered overnight with the current card being deactivated at the end of the call. The call ended successfully with the customer satisfied that both the credit and new card would be processed quickly, and they were given reference number FR-2024-891456 for their fraud claim.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer contacted the fraud prevention team to report a $347.89 charge from an unknown merchant that they did not authorize, leading to a fraud investigation and card replacement.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The customer's fraudulent charge issue was fully addressed with immediate provisional credit, a new card being expedited overnight, and clear next steps provided.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 11.6,
+      "raw_outputs": {
+        "summary": "The customer called to report an unauthorized charge of $347.89 from \"TechWorld Solutions\" that appeared on their credit card statement on December 15th. The agent filed the transaction as fraudulent, issued a provisional credit to reverse the charge within 24 hours, and arranged for an expedited replacement card to be delivered overnight with the current card being deactivated at the end of the call. The call ended successfully with the customer satisfied that both the credit and new card would be processed quickly, and they were given reference number FR-2024-891456 for their fraud claim.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer contacted the fraud prevention team to report a $347.89 charge from an unknown merchant that they did not authorize, leading to a fraud investigation and card replacement."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The customer's fraudulent charge issue was fully addressed with immediate provisional credit, a new card being expedited overnight, and clear next steps provided."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0010",
+      "summary": "The customer called because she couldn't access the spending tracker feature in her online banking, which was showing a blank white screen for the past three days. The agent determined that a system update on October 17th had disabled the feature and caused data synchronization issues, then reset the feature permissions and submitted a priority request to restore the customer's historical spending data within 24-48 hours. The call ended with the agent providing reference number 2024-TR-8847 and confirming the customer would receive email notification when the historical data restoration is complete.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's complaint stems from a system update that caused the spending tracker feature to malfunction and lose historical data, which is a technical problem with the bank's digital platform.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.85,
+      "resolution_notes": "The customer's core issue was addressed with a clear path forward - the spending tracker functionality was restored and a priority request was submitted to recover historical data within 24-48 hours, with email notification promised.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.59,
+      "raw_outputs": {
+        "summary": "The customer called because she couldn't access the spending tracker feature in her online banking, which was showing a blank white screen for the past three days. The agent determined that a system update on October 17th had disabled the feature and caused data synchronization issues, then reset the feature permissions and submitted a priority request to restore the customer's historical spending data within 24-48 hours. The call ended with the agent providing reference number 2024-TR-8847 and confirming the customer would receive email notification when the historical data restoration is complete.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's complaint stems from a system update that caused the spending tracker feature to malfunction and lose historical data, which is a technical problem with the bank's digital platform."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.85,
+          "notes": "The customer's core issue was addressed with a clear path forward - the spending tracker functionality was restored and a priority request was submitted to recover historical data within 24-48 hours, with email notification promised."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0011",
+      "summary": "The customer called frustrated about receiving incorrect information the previous day regarding a $347.82 charge from \"Premium Lifestyle Services\" that she was told would be immediately reversed as fraud, but the dispute was actually denied and she discovered there were three monthly recurring charges totaling over $1,000. The agent reviewed the account, confirmed the three charges from January through March, and escalated the case to the specialized dispute resolution team due to the complexity and previous misinformation. The call ended with the customer receiving escalation case number 847291 and a promise that the dispute resolution team would call her back within 24 hours to investigate all three charges.",
+      "root_cause_category": "agent_error_or_misinformation",
+      "root_cause_explanation": "The customer's primary complaint is that the previous agent gave her completely wrong information about charges on her account, failing to identify that there were three recurring charges instead of one and incorrectly promising immediate resolution.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.85,
+      "resolution_notes": "The customer's core issue about the disputed charges remains unaddressed as the call ended with another escalation and no actual resolution to the billing problem.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 11.21,
+      "raw_outputs": {
+        "summary": "The customer called frustrated about receiving incorrect information the previous day regarding a $347.82 charge from \"Premium Lifestyle Services\" that she was told would be immediately reversed as fraud, but the dispute was actually denied and she discovered there were three monthly recurring charges totaling over $1,000. The agent reviewed the account, confirmed the three charges from January through March, and escalated the case to the specialized dispute resolution team due to the complexity and previous misinformation. The call ended with the customer receiving escalation case number 847291 and a promise that the dispute resolution team would call her back within 24 hours to investigate all three charges.",
+        "category": {
+          "category": "agent_error_or_misinformation",
+          "explanation": "The customer's primary complaint is that the previous agent gave her completely wrong information about charges on her account, failing to identify that there were three recurring charges instead of one and incorrectly promising immediate resolution."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.85,
+          "notes": "The customer's core issue about the disputed charges remains unaddressed as the call ended with another escalation and no actual resolution to the billing problem."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0012",
+      "summary": "The customer called because their online account was locked and they couldn't access it to check their balance and pay their bill. The agent verified the customer's identity, explained the account was locked due to multiple failed login attempts on November 15th, then unlocked the account and sent a temporary password to reset access. The call ended successfully with the customer able to log into their account and access their transaction information.",
+      "root_cause_category": "account_access",
+      "root_cause_explanation": "The customer's primary complaint was being unable to access their online account due to it being locked after multiple failed login attempts, which the agent successfully resolved by unlocking the account and resetting the password.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "neutral",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The customer's core issue of being locked out of their online account was completely resolved - the agent unlocked the account, provided a temporary password, guided the customer through creating a new password, and confirmed the customer could successfully access their account and view transactions.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.1,
+      "raw_outputs": {
+        "summary": "The customer called because their online account was locked and they couldn't access it to check their balance and pay their bill. The agent verified the customer's identity, explained the account was locked due to multiple failed login attempts on November 15th, then unlocked the account and sent a temporary password to reset access. The call ended successfully with the customer able to log into their account and access their transaction information.",
+        "category": {
+          "category": "account_access",
+          "explanation": "The customer's primary complaint was being unable to access their online account due to it being locked after multiple failed login attempts, which the agent successfully resolved by unlocking the account and resetting the password."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "neutral",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The customer's core issue of being locked out of their online account was completely resolved - the agent unlocked the account, provided a temporary password, guided the customer through creating a new password, and confirmed the customer could successfully access their account and view transactions."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0013",
+      "summary": "The customer called about a $39 late fee on their Platinum Rewards card that they believed was unfairly charged since they had autopay set up, arguing that the payment delay was due to processing time rather than their error. The agent reviewed the account, confirmed the payment was received two days late, and offered a one-time courtesy credit of $19.50 (half the fee) along with adjusting the autopay date to process three business days earlier to prevent future issues. The customer accepted the partial credit and autopay adjustment, though they expressed frustration that the full fee wasn't removed.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's complaint stems from the autopay system processing their payment after the due date due to processing delays, which is a technical/system timing issue rather than customer error.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "negative"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's core issue was addressed with a partial credit and autopay adjustment to prevent future occurrences, though they weren't fully satisfied with only receiving half the late fee back.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.06,
+      "raw_outputs": {
+        "summary": "The customer called about a $39 late fee on their Platinum Rewards card that they believed was unfairly charged since they had autopay set up, arguing that the payment delay was due to processing time rather than their error. The agent reviewed the account, confirmed the payment was received two days late, and offered a one-time courtesy credit of $19.50 (half the fee) along with adjusting the autopay date to process three business days earlier to prevent future issues. The customer accepted the partial credit and autopay adjustment, though they expressed frustration that the full fee wasn't removed.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's complaint stems from the autopay system processing their payment after the due date due to processing delays, which is a technical/system timing issue rather than customer error."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "negative"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.8,
+          "notes": "The customer's core issue was addressed with a partial credit and autopay adjustment to prevent future occurrences, though they weren't fully satisfied with only receiving half the late fee back."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0014",
+      "summary": "The customer called because she was locked out of her online account due to multiple failed security question attempts and couldn't remember the answers she had set up three years ago. The agent verified the customer's identity through personal and account information but was unable to unlock the online access since the customer failed all three security questions, so the case was escalated to the Account Security team. The call ended with the agent creating a high-priority case (SC-7749-2024) and informing the customer that Account Security would contact her within 24-48 business hours to restore her online access.",
+      "root_cause_category": "account_access",
+      "root_cause_explanation": "The customer's primary issue is being locked out of her online account due to failed security question attempts and her inability to remember the answers to unlock it.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "neutral"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's core issue of being locked out of their online account was not resolved during the call, but was escalated to a specialized team with a clear timeline and case number for follow-up.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.43,
+      "raw_outputs": {
+        "summary": "The customer called because she was locked out of her online account due to multiple failed security question attempts and couldn't remember the answers she had set up three years ago. The agent verified the customer's identity through personal and account information but was unable to unlock the online access since the customer failed all three security questions, so the case was escalated to the Account Security team. The call ended with the agent creating a high-priority case (SC-7749-2024) and informing the customer that Account Security would contact her within 24-48 business hours to restore her online access.",
+        "category": {
+          "category": "account_access",
+          "explanation": "The customer's primary issue is being locked out of her online account due to failed security question attempts and her inability to remember the answers to unlock it."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.8,
+          "notes": "The customer's core issue of being locked out of their online account was not resolved during the call, but was escalated to a specialized team with a clear timeline and case number for follow-up."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0015",
+      "summary": "The customer called about an unrecognized $39 annual fee charge on their SecureCard Platinum Rewards account, stating they were unaware there would be a fee after a promotional period. The agent explained that the fee was part of the card terms after a two-year promotional waiver expired and processed a one-time courtesy credit of $39 to reverse the charge, also explaining options to downgrade to a no-fee card. The call ended with the customer satisfied that the fee would be credited back within 24 hours and agreeing to consider their card options for the future.",
+      "root_cause_category": "agent_error_or_misinformation",
+      "root_cause_explanation": "The customer's complaint stems from not being properly informed about the annual fee structure when opening the account, indicating a failure in communication during the initial sales process.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's core issue (the unexpected $39 annual fee charge) was directly addressed with a full credit reversal, and they expressed satisfaction with the resolution while being informed of future options.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.22,
+      "raw_outputs": {
+        "summary": "The customer called about an unrecognized $39 annual fee charge on their SecureCard Platinum Rewards account, stating they were unaware there would be a fee after a promotional period. The agent explained that the fee was part of the card terms after a two-year promotional waiver expired and processed a one-time courtesy credit of $39 to reverse the charge, also explaining options to downgrade to a no-fee card. The call ended with the customer satisfied that the fee would be credited back within 24 hours and agreeing to consider their card options for the future.",
+        "category": {
+          "category": "agent_error_or_misinformation",
+          "explanation": "The customer's complaint stems from not being properly informed about the annual fee structure when opening the account, indicating a failure in communication during the initial sales process."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.9,
+          "notes": "The customer's core issue (the unexpected $39 annual fee charge) was directly addressed with a full credit reversal, and they expressed satisfaction with the resolution while being informed of future options."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0016",
+      "summary": "The customer called about unauthorized \"StreamMax Premium\" charges of $24.99 appearing monthly on their statement since July, which they believed they had cancelled after a free trial. The agent processed a dispute for the September charge and provided a goodwill credit for the August charge totaling $49.98, but could not reverse the July charge due to time limits, and also blocked future charges from StreamMax. The call ended with the customer accepting the partial resolution of getting $49.98 back but expressing dissatisfaction about losing the $24.99 July charge.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer is disputing recurring charges from StreamMax Premium that they claim to have never authorized, even though they may have signed up for a free trial that converted to paid without their knowledge.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's core issue was addressed with $49.98 in refunds, future charges blocked, and a clear resolution path, despite not recovering the full $74.97 in disputed charges.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.86,
+      "raw_outputs": {
+        "summary": "The customer called about unauthorized \"StreamMax Premium\" charges of $24.99 appearing monthly on their statement since July, which they believed they had cancelled after a free trial. The agent processed a dispute for the September charge and provided a goodwill credit for the August charge totaling $49.98, but could not reverse the July charge due to time limits, and also blocked future charges from StreamMax. The call ended with the customer accepting the partial resolution of getting $49.98 back but expressing dissatisfaction about losing the $24.99 July charge.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer is disputing recurring charges from StreamMax Premium that they claim to have never authorized, even though they may have signed up for a free trial that converted to paid without their knowledge."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.8,
+          "notes": "The customer's core issue was addressed with $49.98 in refunds, future charges blocked, and a clear resolution path, despite not recovering the full $74.97 in disputed charges."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0017",
+      "summary": "The customer called to report two unauthorized charges totaling $444.42 from GameStop Online and Best Buy Mobile that appeared on their December statement. The agent initiated a fraud investigation, canceled the customer's card with a replacement to arrive in 2 business days, and issued temporary credit only for the GameStop charge due to its suspicious timing, while explaining that the Best Buy charge required additional review because it showed in-store verification steps including PIN entry. The call ended with the agent transferring the customer to a supervisor to discuss getting both charges removed, as the customer was dissatisfied with only receiving partial temporary credit.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer is reporting two charges totaling over $400 that they claim they did not make, with one occurring at an unusual hour (2:47 AM) and both at merchants they say they haven't used recently.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's core issue of getting both fraudulent charges credited was not resolved, as only one charge received temporary credit and the customer was transferred to a supervisor to continue addressing the unresolved dispute.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.68,
+      "raw_outputs": {
+        "summary": "The customer called to report two unauthorized charges totaling $444.42 from GameStop Online and Best Buy Mobile that appeared on their December statement. The agent initiated a fraud investigation, canceled the customer's card with a replacement to arrive in 2 business days, and issued temporary credit only for the GameStop charge due to its suspicious timing, while explaining that the Best Buy charge required additional review because it showed in-store verification steps including PIN entry. The call ended with the agent transferring the customer to a supervisor to discuss getting both charges removed, as the customer was dissatisfied with only receiving partial temporary credit.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer is reporting two charges totaling over $400 that they claim they did not make, with one occurring at an unusual hour (2:47 AM) and both at merchants they say they haven't used recently."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.8,
+          "notes": "The customer's core issue of getting both fraudulent charges credited was not resolved, as only one charge received temporary credit and the customer was transferred to a supervisor to continue addressing the unresolved dispute."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0018",
+      "summary": "The customer contacted SecureCard because their spending tracker feature had disappeared from their online account dashboard three days prior due to a system update error that temporarily disabled premium features. The agent re-enabled the customer's SecureInsights package access, escalated the issue to the technical team to prevent future occurrences, and confirmed that all historical spending data remained intact. The call ended successfully after the customer verified they could see their spending tracker and data had been restored.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's spending tracker feature disappeared due to a system update that erroneously disabled premium features, which was a technical problem requiring re-activation by the agent.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The customer's core issue with accessing the spending tracker was successfully fixed during the call, with the customer confirming they can see the feature and their data again.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 8.33,
+      "raw_outputs": {
+        "summary": "The customer contacted SecureCard because their spending tracker feature had disappeared from their online account dashboard three days prior due to a system update error that temporarily disabled premium features. The agent re-enabled the customer's SecureInsights package access, escalated the issue to the technical team to prevent future occurrences, and confirmed that all historical spending data remained intact. The call ended successfully after the customer verified they could see their spending tracker and data had been restored.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's spending tracker feature disappeared due to a system update that erroneously disabled premium features, which was a technical problem requiring re-activation by the agent."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The customer's core issue with accessing the spending tracker was successfully fixed during the call, with the customer confirming they can see the feature and their data again."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0019",
+      "summary": "The customer called because they received incorrect information the previous day about a $387.50 disputed charge from MegaMart, having been told it would be automatically reversed within 24 hours when standard disputes actually take 7-10 business days. The agent escalated the case to the fraud department since the customer was out of town during the transaction, issued a temporary credit of $387.50 that would appear within 2-4 hours, and provided fax information for the customer to submit supporting documentation. The call ended with the customer agreeing to send hotel receipts as proof they were in Denver when the Phoenix transaction occurred, and the agent apologizing for the previous day's misinformation.",
+      "root_cause_category": "agent_error_or_misinformation",
+      "root_cause_explanation": "The customer's primary complaint is that an agent yesterday gave them completely incorrect information about a 24-hour automatic reversal for their dispute, which caused problems when they tried to make a large purchase and their card was declined.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's immediate problem of needing access to credit was addressed with a temporary credit solution within 2-4 hours, and they were given clear next steps to support their dispute case.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 11.3,
+      "raw_outputs": {
+        "summary": "The customer called because they received incorrect information the previous day about a $387.50 disputed charge from MegaMart, having been told it would be automatically reversed within 24 hours when standard disputes actually take 7-10 business days. The agent escalated the case to the fraud department since the customer was out of town during the transaction, issued a temporary credit of $387.50 that would appear within 2-4 hours, and provided fax information for the customer to submit supporting documentation. The call ended with the customer agreeing to send hotel receipts as proof they were in Denver when the Phoenix transaction occurred, and the agent apologizing for the previous day's misinformation.",
+        "category": {
+          "category": "agent_error_or_misinformation",
+          "explanation": "The customer's primary complaint is that an agent yesterday gave them completely incorrect information about a 24-hour automatic reversal for their dispute, which caused problems when they tried to make a large purchase and their card was declined."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.8,
+          "notes": "The customer's immediate problem of needing access to credit was addressed with a temporary credit solution within 2-4 hours, and they were given clear next steps to support their dispute case."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0020",
+      "summary": "The customer called because their online account was locked and they couldn't log in to pay their bill, with the lock triggered by multiple unsuccessful login attempts on November 8th. The agent verified the customer's identity, provided the current balance and payment due information, but was unable to unlock the account due to system errors, so they escalated the issue to technical support and updated the customer's phone number. The call ended with the agent providing case number TC-2024-8839 and informing the customer that technical support would contact them within 48 hours to resolve the account access issue.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's account was locked due to failed login attempts, and the agent encountered system errors when trying to unlock it, requiring escalation to the technical support team to resolve the underlying technical problem.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.8,
+      "resolution_notes": "The customer's core issue of accessing their locked online account was not resolved, only escalated to technical support with no guaranteed timeline for resolution.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.89,
+      "raw_outputs": {
+        "summary": "The customer called because their online account was locked and they couldn't log in to pay their bill, with the lock triggered by multiple unsuccessful login attempts on November 8th. The agent verified the customer's identity, provided the current balance and payment due information, but was unable to unlock the account due to system errors, so they escalated the issue to technical support and updated the customer's phone number. The call ended with the agent providing case number TC-2024-8839 and informing the customer that technical support would contact them within 48 hours to resolve the account access issue.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's account was locked due to failed login attempts, and the agent encountered system errors when trying to unlock it, requiring escalation to the technical support team to resolve the underlying technical problem."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.8,
+          "notes": "The customer's core issue of accessing their locked online account was not resolved, only escalated to technical support with no guaranteed timeline for resolution."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0021",
+      "summary": "The customer called to dispute a $25 late fee on their statement, claiming they paid their bill on time by initiating an online payment on March 13th for a March 15th due date. The agent explained that the customer's first-time use of the standard e-check payment option took 3-5 business days to process, causing the payment to post on March 18th, but agreed to issue a one-time courtesy credit to remove the late fee given the customer's excellent eight-year payment history and the confusion about payment processing times. The call ended successfully with the late fee being reversed and the agent providing information about same-day payment options for future use.",
+      "root_cause_category": "billing_dispute",
+      "root_cause_explanation": "The customer is disputing a $25 late fee charge that they believe was applied incorrectly because they initiated their payment before the due date, not realizing that e-check payments take several business days to process.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The customer's core issue (disputed late fee) was fully addressed with the agent removing the $25 charge and providing clear guidance for future payments, leaving the customer satisfied.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.84,
+      "raw_outputs": {
+        "summary": "The customer called to dispute a $25 late fee on their statement, claiming they paid their bill on time by initiating an online payment on March 13th for a March 15th due date. The agent explained that the customer's first-time use of the standard e-check payment option took 3-5 business days to process, causing the payment to post on March 18th, but agreed to issue a one-time courtesy credit to remove the late fee given the customer's excellent eight-year payment history and the confusion about payment processing times. The call ended successfully with the late fee being reversed and the agent providing information about same-day payment options for future use.",
+        "category": {
+          "category": "billing_dispute",
+          "explanation": "The customer is disputing a $25 late fee charge that they believe was applied incorrectly because they initiated their payment before the due date, not realizing that e-check payments take several business days to process."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The customer's core issue (disputed late fee) was fully addressed with the agent removing the $25 charge and providing clear guidance for future payments, leaving the customer satisfied."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0022",
+      "summary": "The customer called because she was locked out of her online account after failing to answer security questions correctly three times. The agent verified her identity through account details and payment information, then arranged to send a verification code to her phone so she could reset her security questions, and also helped her verify a transaction she was concerned about. The call ended with the agent explaining that the verification code would arrive within minutes and the customer would receive email confirmation once she successfully reset her security questions.",
+      "root_cause_category": "account_access",
+      "root_cause_explanation": "The customer's primary complaint was being locked out of their online account due to forgotten security question answers, which prevented them from accessing their account information.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.85,
+      "resolution_notes": "The customer's core issue of being locked out of their online account was addressed with a clear solution (verification code to reset security questions), and their secondary concern about a transaction was also resolved during the call.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.42,
+      "raw_outputs": {
+        "summary": "The customer called because she was locked out of her online account after failing to answer security questions correctly three times. The agent verified her identity through account details and payment information, then arranged to send a verification code to her phone so she could reset her security questions, and also helped her verify a transaction she was concerned about. The call ended with the agent explaining that the verification code would arrive within minutes and the customer would receive email confirmation once she successfully reset her security questions.",
+        "category": {
+          "category": "account_access",
+          "explanation": "The customer's primary complaint was being locked out of their online account due to forgotten security question answers, which prevented them from accessing their account information."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.85,
+          "notes": "The customer's core issue of being locked out of their online account was addressed with a clear solution (verification code to reset security questions), and their secondary concern about a transaction was also resolved during the call."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0023",
+      "summary": "The customer called about an unexplained $89.99 \"SCC Annual Service\" charge on their February 15th statement, which the agent identified as an annual fee for a SecureCard Premium upgrade that occurred automatically in November after the customer didn't opt out of upgrade materials mailed to their old address. The agent offered to waive the fee and downgrade the card but said the customer needed to be transferred to Premium Services for the actual processing, with a 25-30 minute wait time. The customer refused the transfer due to the long wait time and ended the call, saying they would call back later using case number PS-4471-0892.",
+      "root_cause_category": "agent_error_or_misinformation",
+      "root_cause_explanation": "The root cause stems from the company's failure to process the customer's address change in September, which resulted in upgrade notifications being sent to the wrong address and led to an unwanted card upgrade with fees the customer never consented to.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "very_negative",
+        "end": "very_negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's issue was not resolved as they hung up without receiving the promised refund or account downgrade, and were left requiring a future callback to complete the resolution.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.59,
+      "raw_outputs": {
+        "summary": "The customer called about an unexplained $89.99 \"SCC Annual Service\" charge on their February 15th statement, which the agent identified as an annual fee for a SecureCard Premium upgrade that occurred automatically in November after the customer didn't opt out of upgrade materials mailed to their old address. The agent offered to waive the fee and downgrade the card but said the customer needed to be transferred to Premium Services for the actual processing, with a 25-30 minute wait time. The customer refused the transfer due to the long wait time and ended the call, saying they would call back later using case number PS-4471-0892.",
+        "category": {
+          "category": "agent_error_or_misinformation",
+          "explanation": "The root cause stems from the company's failure to process the customer's address change in September, which resulted in upgrade notifications being sent to the wrong address and led to an unwanted card upgrade with fees the customer never consented to."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "very_negative",
+          "end": "very_negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.9,
+          "notes": "The customer's issue was not resolved as they hung up without receiving the promised refund or account downgrade, and were left requiring a future callback to complete the resolution."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0024",
+      "summary": "The customer called about unauthorized recurring charges of $29.99 per month from \"StreamFit Pro\" that had been appearing on their statement for three months, totaling $89.97. The agent disputed all three transactions, placed a provisional credit on the account that would appear within 24 hours, and blocked future charges from the merchant. The call ended with the customer satisfied after receiving a dispute reference number and confirmation that they would receive email documentation of the resolution.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer explicitly states they never authorized the recurring StreamFit Pro charges appearing on their account for three months and believes it to be fraudulent activity.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's unauthorized charge issue was fully addressed with disputed transactions totaling $89.97, provisional credit within 24 hours, future charge blocking, and confirmation details provided.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.22,
+      "raw_outputs": {
+        "summary": "The customer called about unauthorized recurring charges of $29.99 per month from \"StreamFit Pro\" that had been appearing on their statement for three months, totaling $89.97. The agent disputed all three transactions, placed a provisional credit on the account that would appear within 24 hours, and blocked future charges from the merchant. The call ended with the customer satisfied after receiving a dispute reference number and confirmation that they would receive email documentation of the resolution.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer explicitly states they never authorized the recurring StreamFit Pro charges appearing on their account for three months and believes it to be fraudulent activity."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.9,
+          "notes": "The customer's unauthorized charge issue was fully addressed with disputed transactions totaling $89.97, provisional credit within 24 hours, future charge blocking, and confirmation details provided."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0025",
+      "summary": "The customer called to dispute an $847.32 charge from \"TechWorld Electronics\" that they claimed was fraudulent and that they did not make. The agent processed a temporary credit to the customer's account, initiated a fraud investigation that could take up to 10 business days, and expedited a replacement card to arrive by March 18th. The call ended with the customer accepting these actions despite expressing frustration about having to wait for the investigation to complete.",
+      "root_cause_category": "fraud_or_unauthorized_charge",
+      "root_cause_explanation": "The customer is reporting a charge of $847.32 from TechWorld Electronics that they claim they did not authorize or make, and the agent processes it as a fraud investigation with a temporary credit while canceling the card.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "very_negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.85,
+      "resolution_notes": "The customer's fraudulent charge issue was addressed with a temporary credit, fraud investigation initiated, new card ordered, and clear next steps provided, despite the customer's dissatisfaction with the investigation timeline.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 10.2,
+      "raw_outputs": {
+        "summary": "The customer called to dispute an $847.32 charge from \"TechWorld Electronics\" that they claimed was fraudulent and that they did not make. The agent processed a temporary credit to the customer's account, initiated a fraud investigation that could take up to 10 business days, and expedited a replacement card to arrive by March 18th. The call ended with the customer accepting these actions despite expressing frustration about having to wait for the investigation to complete.",
+        "category": {
+          "category": "fraud_or_unauthorized_charge",
+          "explanation": "The customer is reporting a charge of $847.32 from TechWorld Electronics that they claim they did not authorize or make, and the agent processes it as a fraud investigation with a temporary credit while canceling the card."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "very_negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.85,
+          "notes": "The customer's fraudulent charge issue was addressed with a temporary credit, fraud investigation initiated, new card ordered, and clear next steps provided, despite the customer's dissatisfaction with the investigation timeline."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0026",
+      "summary": "The customer contacted SecureCard customer service because their mobile app's spending tracker feature, which they had been using for six months, suddenly stopped working and only showed a blank screen or \"feature unavailable\" message after a recent app update. The agent attempted to troubleshoot by refreshing the customer's account privileges, but when that failed, escalated the issue to the technical support team and created a priority ticket (TS-7749832) with a 24-48 hour response timeframe. The call ended with the customer expressing frustration and requesting a phone callback rather than email communication, along with wanting their monthly premium fee credited if the issue isn't resolved quickly.",
+      "root_cause_category": "technical_issue",
+      "root_cause_explanation": "The customer's spending tracker feature stopped working after a recent app update, creating a technical malfunction that requires escalation to the technical support team to resolve.",
+      "sentiment_arc": {
+        "beginning": "neutral",
+        "middle": "negative",
+        "end": "negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's spending tracker issue was not fixed during the call and was escalated to technical support without a definitive solution or timeline.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.48,
+      "raw_outputs": {
+        "summary": "The customer contacted SecureCard customer service because their mobile app's spending tracker feature, which they had been using for six months, suddenly stopped working and only showed a blank screen or \"feature unavailable\" message after a recent app update. The agent attempted to troubleshoot by refreshing the customer's account privileges, but when that failed, escalated the issue to the technical support team and created a priority ticket (TS-7749832) with a 24-48 hour response timeframe. The call ended with the customer expressing frustration and requesting a phone callback rather than email communication, along with wanting their monthly premium fee credited if the issue isn't resolved quickly.",
+        "category": {
+          "category": "technical_issue",
+          "explanation": "The customer's spending tracker feature stopped working after a recent app update, creating a technical malfunction that requires escalation to the technical support team to resolve."
+        },
+        "sentiment": {
+          "beginning": "neutral",
+          "middle": "negative",
+          "end": "negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.9,
+          "notes": "The customer's spending tracker issue was not fixed during the call and was escalated to technical support without a definitive solution or timeline."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0027",
+      "summary": "The customer called because they received incorrect information about when a due date change would take effect, resulting in $64 in late and returned payment fees when their December payment wasn't made on the original due date. The agent reviewed the account, confirmed the previous agent had given wrong information, and reversed both fees totaling $64 while also removing accrued interest charges and updating the autopay schedule. The call ended with the customer satisfied after the agent resolved the billing issues and confirmed the payment requirements going forward.",
+      "root_cause_category": "agent_error_or_misinformation",
+      "root_cause_explanation": "The customer's complaint stems from receiving incorrect information from a previous agent about when a due date change would take effect, which led to unexpected late fees and charges.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "positive"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.95,
+      "resolution_notes": "The customer's core issue about wrongly charged fees was fully addressed with both fees being reversed, the payment situation was clarified, and autopay was updated to prevent future issues.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.73,
+      "raw_outputs": {
+        "summary": "The customer called because they received incorrect information about when a due date change would take effect, resulting in $64 in late and returned payment fees when their December payment wasn't made on the original due date. The agent reviewed the account, confirmed the previous agent had given wrong information, and reversed both fees totaling $64 while also removing accrued interest charges and updating the autopay schedule. The call ended with the customer satisfied after the agent resolved the billing issues and confirmed the payment requirements going forward.",
+        "category": {
+          "category": "agent_error_or_misinformation",
+          "explanation": "The customer's complaint stems from receiving incorrect information from a previous agent about when a due date change would take effect, which led to unexpected late fees and charges."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "positive"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.95,
+          "notes": "The customer's core issue about wrongly charged fees was fully addressed with both fees being reversed, the payment situation was clarified, and autopay was updated to prevent future issues."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0028",
+      "summary": "The customer called because their online account was locked and they couldn't log in, which occurred due to multiple failed login attempts when using a different device and an outdated password that no longer met new system requirements. The agent verified the customer's identity, removed the security lock, and guided them through resetting their password to meet updated security standards including answering a security question. The call ended successfully with the customer able to access their account dashboard and see all their account information.",
+      "root_cause_category": "account_access",
+      "root_cause_explanation": "The customer's primary complaint was being unable to log into their online account due to a security lock triggered by failed login attempts, which is a clear account access issue.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "neutral"
+      },
+      "resolution_flag": true,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's core issue of being locked out of their online account was successfully resolved as they were able to log in and access their account dashboard by the end of the call.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 8.85,
+      "raw_outputs": {
+        "summary": "The customer called because their online account was locked and they couldn't log in, which occurred due to multiple failed login attempts when using a different device and an outdated password that no longer met new system requirements. The agent verified the customer's identity, removed the security lock, and guided them through resetting their password to meet updated security standards including answering a security question. The call ended successfully with the customer able to access their account dashboard and see all their account information.",
+        "category": {
+          "category": "account_access",
+          "explanation": "The customer's primary complaint was being unable to log into their online account due to a security lock triggered by failed login attempts, which is a clear account access issue."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "neutral"
+        },
+        "resolution": {
+          "resolved": true,
+          "confidence": 0.9,
+          "notes": "The customer's core issue of being locked out of their online account was successfully resolved as they were able to log in and access their account dashboard by the end of the call."
+        }
+      }
+    },
+    {
+      "transcript_id": "synthetic_0029",
+      "summary": "The customer called to dispute a $39 late fee, explaining that they had set up autopay but the payment was still late because autopay was scheduled for March 15th while the due date was March 12th. The agent verified the customer's account information, explained that the late fee was valid since payment was received after the due date, updated the autopay settings to prevent future issues, but could not waive the fee due to company policy. The call ended with the agent transferring the customer to a supervisor after the customer requested to speak with someone who could potentially remove the fee, and the customer expressed they might cancel their card if the issue wasn't resolved.",
+      "root_cause_category": "product_or_feature_issue",
+      "root_cause_explanation": "The customer's complaint stems from confusion about how the autopay feature works, specifically that it didn't automatically schedule payments before the due date, leading to an unexpected late fee despite the customer's intent to avoid late payments.",
+      "sentiment_arc": {
+        "beginning": "negative",
+        "middle": "negative",
+        "end": "very_negative"
+      },
+      "resolution_flag": false,
+      "resolution_confidence": 0.9,
+      "resolution_notes": "The customer's core issue (removal of the $39 late fee) was not addressed and they were escalated to a supervisor, leaving the matter unresolved at the end of this call.",
+      "model": "claude-sonnet-4-20250514",
+      "latency_seconds": 9.88,
+      "raw_outputs": {
+        "summary": "The customer called to dispute a $39 late fee, explaining that they had set up autopay but the payment was still late because autopay was scheduled for March 15th while the due date was March 12th. The agent verified the customer's account information, explained that the late fee was valid since payment was received after the due date, updated the autopay settings to prevent future issues, but could not waive the fee due to company policy. The call ended with the agent transferring the customer to a supervisor after the customer requested to speak with someone who could potentially remove the fee, and the customer expressed they might cancel their card if the issue wasn't resolved.",
+        "category": {
+          "category": "product_or_feature_issue",
+          "explanation": "The customer's complaint stems from confusion about how the autopay feature works, specifically that it didn't automatically schedule payments before the due date, leading to an unexpected late fee despite the customer's intent to avoid late payments."
+        },
+        "sentiment": {
+          "beginning": "negative",
+          "middle": "negative",
+          "end": "very_negative"
+        },
+        "resolution": {
+          "resolved": false,
+          "confidence": 0.9,
+          "notes": "The customer's core issue (removal of the $39 late fee) was not addressed and they were escalated to a supervisor, leaving the matter unresolved at the end of this call."
+        }
+      }
+    }
+  ],
+  "errors": []
+}

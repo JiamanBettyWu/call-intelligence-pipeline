@@ -1,0 +1,63 @@
+Agent: Thank you for calling SecureCard customer service, this is your representative speaking. How can I help you today?
+
+Customer: Hi, I'm having trouble with my mobile app. I've been using the spending tracker feature for like six months now, and suddenly I can't access it anymore.
+
+Agent: I'm sorry to hear you're experiencing difficulties with the app. Can I get your account number so I can look into this for you?
+
+Customer: Sure, it's 4729-8851-3642-7095.
+
+Agent: Thank you. I see your account here, Mr. Johnson. Can you tell me exactly what's happening when you try to access the spending tracker?
+
+Customer: Well, I open the app like I always do, and when I tap on the spending tracker icon, it just shows a blank screen. Sometimes it says "feature unavailable" or something like that.
+
+Agent: I understand. When did you first notice this issue?
+
+Customer: Started about three days ago, maybe Thursday? I use it every morning to check my spending from the day before. I've got it set up to track my dining and gas expenses separately.
+
+Agent: Okay, let me check your account settings. I can see you do have the Premium SecureCard account which includes the spending tracker feature. Have you tried logging out and back into the app?
+
+Customer: Of course I tried that. I also deleted the app and reinstalled it. Still nothing.
+
+Agent: I see you made a purchase yesterday for $47.83 at Murphy's Restaurant and $52.14 for gas at Shell. These should be showing up in your tracker. Let me check our system status.
+
+Customer: Exactly! Those are the kinds of transactions I track daily. This is really frustrating because I use this for my monthly budgeting.
+
+Agent: I'm showing that our mobile app services are all operational on our end. Can you tell me what version of the app you're using?
+
+Customer: It's version 3.2.1. I updated it automatically last week, actually. Maybe that's when this started?
+
+Agent: That could be related. Version 3.2.1 was released on the 15th. Let me check if there are any known issues with that update.
+
+Customer: Look, I've been a customer for over four years, and this feature is one of the main reasons I pay the extra $8.99 monthly fee for the Premium account.
+
+Agent: I completely understand your frustration. I'm seeing some notes here about potential compatibility issues with the latest app version, but I don't have specific details about the spending tracker feature.
+
+Customer: So what can you do about it? I need this working.
+
+Agent: Let me try refreshing your account privileges for the mobile features. This might take a moment.
+
+Customer: Okay, I'll wait.
+
+Agent: I've refreshed the settings on our end. Can you try closing the app completely and reopening it now?
+
+Customer: Alright, give me a second... No, still the same thing. Just a blank screen where my spending categories should be.
+
+Agent: I apologize that didn't resolve it. This appears to be a more complex technical issue than I can handle at this level. I'm going to need to escalate this to our technical support team.
+
+Customer: How long is that going to take? I really need this feature working.
+
+Agent: Our technical team typically responds within 24 to 48 hours. I'm creating a priority ticket since this involves a paid premium feature. Your case number is TS-7749832.
+
+Customer: This is ridiculous. A feature I've been using for months just stops working after an app update?
+
+Agent: I understand your frustration, and I've noted in your file that this started after the recent app update. The technical team will have all these details and should be able to provide a solution or timeline.
+
+Customer: Fine, but I want someone to call me back, not just send an email. And if this isn't fixed soon, I want that monthly fee credited back.
+
+Agent: I've noted your preference for a phone callback and documented your request about the monthly fee. Is the best callback number the one ending in 4738?
+
+Customer: Yes, that's fine. This better get resolved quickly.
+
+Agent: I've escalated your case with priority status. You should hear back within 48 hours. Is there anything else I can help you with today?
+
+Customer: No, just get this fixed. Thanks.

@@ -1,0 +1,13 @@
+transcript_id,category,resolved
+synthetic_0000,fraud_or_unauthorized_charge,true
+synthetic_0011,agent_error_or_misinformation,false
+synthetic_0029,billing_dispute,false
+synthetic_0020,technical_issue,false
+synthetic_0017,fraud_or_unauthorized_charge,false
+synthetic_0025,fraud_or_unauthorized_charge,true
+synthetic_0029,billing_dispute,false
+synthetic_0002,product_or_feature_issue,true
+synthetic_0003,account_access,true
+synthetic_0004,technical_issue,true
+synthetic_0005,billing_dispute,false
+synthetic_0018,product_or_feature_issue,true

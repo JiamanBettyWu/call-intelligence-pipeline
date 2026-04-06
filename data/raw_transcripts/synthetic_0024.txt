@@ -1,0 +1,53 @@
+Agent: Thank you for calling First National Credit Services, this is customer service. How can I help you today?
+
+Customer: Yeah, hi. I'm looking at my statement and there's this charge that keeps showing up that I never authorized. It's been going on for like three months now.
+
+Agent: I'm sorry to hear about that concern. I'd be happy to help you look into those charges. Can I get your account number please?
+
+Customer: It's 4829-1156-7743-9082.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 7391.
+
+Agent: Perfect, thank you Mr. Rodriguez. I can see your account here. Which charges are you referring to?
+
+Customer: There's this thing called "StreamFit Pro" charging me $29.99 every month. I've never even heard of this company before, and it started back in August.
+
+Agent: Let me pull up your recent statements. I can see the StreamFit Pro charges - $29.99 on August 15th, September 15th, and October 15th. Do you recall making any fitness app purchases or signing up for any workout streaming services?
+
+Customer: No, absolutely not. I go to a regular gym. I don't do any of that online workout stuff. This is clearly fraud or something.
+
+Agent: I understand your frustration. Let me look into this further. Sometimes these charges can come from free trials that convert to paid subscriptions. Did you perhaps sign up for any free trials recently, maybe through a promotion or advertisement?
+
+Customer: Look, I'm telling you I never signed up for anything called StreamFit. Can you just remove these charges or not?
+
+Agent: I want to help resolve this for you. Let me check if we have any additional transaction details. I can see the charges originated from online purchases. The merchant is showing as StreamFit Technologies based in California.
+
+Customer: I don't care where they're based. I didn't authorize these charges and I want my money back.
+
+Agent: I understand completely. Since you're stating you didn't authorize these recurring charges, I can dispute all three transactions for you. That would be $89.97 total. I'll also block any future charges from this merchant.
+
+Customer: Okay, good. How long is that going to take?
+
+Agent: The provisional credit for $89.97 will appear on your account within 24 hours. The full investigation typically takes 5-7 business days, but in most cases like this, the credit becomes permanent.
+
+Customer: And they won't be able to charge my card again?
+
+Agent: That's correct. I'm placing a block on StreamFit Technologies right now. If they attempt to process any future charges, they'll be automatically declined.
+
+Customer: What about my credit score? Will this affect anything?
+
+Agent: No, disputing unauthorized merchant charges won't impact your credit score at all. This is just removing fraudulent transactions from your account.
+
+Customer: Alright, that sounds better. Will I get some kind of confirmation about this?
+
+Agent: Yes, you'll receive an email confirmation within the next hour with your dispute reference number, which is DF20241115-4482. You'll also see the provisional credit on your next statement.
+
+Customer: Okay, I guess that works. Just make sure those charges don't come back.
+
+Agent: Absolutely. Is there anything else I can help you with regarding your account today?
+
+Customer: No, that covers it. Thanks for actually fixing this.
+
+Agent: You're very welcome. Thank you for calling First National Credit Services and have a great day.

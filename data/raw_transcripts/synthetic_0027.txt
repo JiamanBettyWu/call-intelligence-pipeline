@@ -1,0 +1,57 @@
+Agent: Thank you for calling First National Credit Services, this is customer service. How can I help you today?
+
+Customer: Hi, I'm calling because I was told something last week that turned out to be completely wrong and now I'm getting charged fees I shouldn't have.
+
+Agent: I'm sorry to hear about that. Can I get your account number so I can take a look?
+
+Customer: It's 4729-8834-5512-9847.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 7392.
+
+Agent: Perfect, I have your account pulled up here. What specifically were you told that was incorrect?
+
+Customer: I called last Tuesday about my payment due date. I wanted to change it from the 15th to the 28th because that's when I get paid. The agent told me it would take effect immediately for my next payment, so I thought my December payment would be due on the 28th instead of the 15th.
+
+Agent: I see. And what happened?
+
+Customer: Well I didn't pay on the 15th because I was told it changed, but then I got hit with a $39 late fee and a $25 returned payment fee because my autopay got declined when it tried to run on the 15th. That's $64 in fees for something that wasn't my fault.
+
+Agent: Let me look at the notes from that call. I see the request was processed on December 3rd... okay, I can see what happened here. The agent did process your due date change, but they gave you incorrect information about when it would take effect.
+
+Customer: So what should have happened?
+
+Agent: Due date changes always take effect after your next payment, not for your next payment. So your December 15th payment still needed to be made, and the new due date of the 28th would start with your January payment.
+
+Customer: That's ridiculous. Why wouldn't they tell me that? I specifically asked when it would start.
+
+Agent: You're absolutely right to be frustrated. The agent should have explained that clearly. I can see in the notes they told you it would be "immediate for your next payment" which is completely wrong.
+
+Customer: So what are you going to do about these fees? I'm not paying $64 because your agent gave me bad information.
+
+Agent: I completely understand, and I'm going to take care of this for you. I'm reversing both the late fee and the returned payment fee since this was due to misinformation from our agent.
+
+Customer: Both fees? The full $64?
+
+Agent: Yes, both fees totaling $64 will be credited back to your account. You should see that reflected within 2 business days.
+
+Customer: Okay, good. And what about my payment? Do I still need to pay the December amount?
+
+Agent: Yes, you'll still need to make your December payment, but since we're past the due date, I'm also removing any interest charges that accrued from the late payment. Your next payment of $247 will be due on December 28th as originally requested.
+
+Customer: Wait, so the due date change did go through?
+
+Agent: Yes, it did process, just not the way the previous agent explained it. Your due date is now the 28th going forward, starting with this month since we're past the original due date.
+
+Customer: Alright, so I need to pay $247 by December 28th, and you're refunding the $64 in fees?
+
+Agent: That's correct. And I've updated your autopay to run on the 28th going forward so this won't happen again.
+
+Customer: Okay, that sounds fair. I appreciate you actually fixing this instead of giving me the runaround.
+
+Agent: Of course. Is there anything else I can help you with today?
+
+Customer: No, that covers it. Thanks for sorting this out.
+
+Agent: You're welcome. Have a good day.

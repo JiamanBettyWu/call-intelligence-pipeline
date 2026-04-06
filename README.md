@@ -56,7 +56,7 @@ Real call transcripts are PII-sensitive, so the dataset here is synthetic — 30
 A small hand-labeled eval set (`data/eval_labels.csv`, 15 transcripts) provides ground truth for root cause classification. Labeling these manually before running eval surfaces category boundary ambiguities — cases where "billing_dispute" and "policy_disagreement" overlap, for instance — that prompt iteration can address.
 
 ```
-Overall accuracy:        73%   (11/15 correct)
+Overall accuracy:        63.6%   (7/11 correct)
 
 Per-category accuracy:
   billing_dispute              100%

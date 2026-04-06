@@ -1,0 +1,45 @@
+Agent: Thank you for calling Premier Card Services, this is customer service. How can I help you today?
+
+Customer: Yeah, hi. I'm calling about a late fee that was charged to my account. I got hit with a $39 late fee and I don't think it's fair.
+
+Agent: I'd be happy to help you with that. Can I get your account number to pull up your information?
+
+Customer: It's 4521-8839-2247-1156.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 7829.
+
+Agent: Perfect, I have your account pulled up here. I can see the late fee of $39 was applied on March 15th. It looks like your payment of $125 was due on March 12th but wasn't received until March 14th.
+
+Customer: Right, but I set up autopay! The payment should have gone through automatically. This isn't my fault.
+
+Agent: I understand your frustration. Let me check your autopay settings... I see that autopay was set up on February 3rd, but it shows it was scheduled for the 15th of each month, not the 12th when your payment is actually due.
+
+Customer: What? That doesn't make sense. When I signed up for autopay, nobody told me I had to pick a date before my due date.
+
+Agent: I can see how that would be confusing. The autopay was set for March 15th, which is why the payment posted two days after your due date, resulting in the late fee.
+
+Customer: Look, I've been a customer for over six years. I've never missed a payment before this. Can't you just remove this fee as a courtesy?
+
+Agent: I appreciate your loyalty as a long-term customer. Let me review your payment history... I do see you have an excellent payment record. However, our policy states that late fees can only be waived in cases of system error or bank processing delays.
+
+Customer: This is ridiculous. I set up autopay specifically to avoid this kind of thing. Your system should have warned me about the date issue.
+
+Agent: I understand your concern, and I've updated your autopay to process on the 10th of each month going forward to prevent this in the future. Unfortunately, I'm not able to waive the late fee as the payment was technically received after the due date.
+
+Customer: So you're telling me that even though I'm a good customer who tried to do the right thing, you won't help me out with $39?
+
+Agent: I know this is frustrating. I've looked at all the options available to me, but the late fee stands according to our policy. The payment was received after the due date regardless of the autopay setup.
+
+Customer: This is terrible customer service. I want to speak to someone who can actually help me.
+
+Agent: I understand you'd like to explore other options. I can transfer you to my supervisor who may be able to review your case further.
+
+Customer: Yes, please do that. And make sure they understand I've been a loyal customer for six years.
+
+Agent: Absolutely. I'll transfer you now and provide them with all the details we've discussed. Please hold while I connect you.
+
+Customer: Fine, but if they can't help me, I'm seriously considering canceling this card.
+
+Agent: I've noted that in your account. You'll be connected with a supervisor momentarily. Thank you for holding.

@@ -1,0 +1,47 @@
+Agent: Thank you for calling SecureCard customer service, this is your representative speaking. Can I get your account number to get started today?
+
+Customer: Yeah, it's 4782-1156-9023-4471. I'm calling because I got this weird charge on my statement and I can't figure out what it's for.
+
+Agent: I can help you with that. Let me pull up your account... okay I see your account here. What's the charge you're asking about?
+
+Customer: It's from February 15th for $89.99 and it just says "SCC Annual Service" or something like that. I have no idea what that is.
+
+Agent: Let me look at that charge... okay I see it here. That's your SecureCard Premium annual fee that posted on February 15th. Your card does carry an annual fee of $89.99.
+
+Customer: What? No, that can't be right. I've had this card for like three years and I've never been charged an annual fee before.
+
+Agent: Well sir, according to our records you were upgraded to the SecureCard Premium in November of last year. The Premium card has enhanced rewards but does carry the $89.99 annual fee.
+
+Customer: I never asked to be upgraded to anything! Nobody told me there would be fees. This is ridiculous.
+
+Agent: I understand your frustration. Let me check your account history... I do show that you were sent notification materials about the upgrade in October, and since you didn't opt out by November 1st, the upgrade went through automatically.
+
+Customer: Are you kidding me? You can't just upgrade someone's card and start charging fees without their permission. That's basically stealing.
+
+Agent: Sir, I assure you this isn't stealing. The terms were disclosed in the materials that were mailed to your address on file. I'm showing they went to 428 Oak Street.
+
+Customer: I moved in September! I told you guys about my address change. This is unbelievable.
+
+Agent: Let me check for address change requests... I'm not seeing any address updates processed in September. Do you have a confirmation number for when you updated your address?
+
+Customer: No, I don't keep confirmation numbers for every little thing. But I definitely called and changed it. So now you're telling me you screwed up my address AND charged me a fee I never agreed to?
+
+Agent: I understand this is frustrating. What I can do is waive the annual fee as a one-time courtesy, but I would need to downgrade your card back to the standard SecureCard.
+
+Customer: Fine, do that. But I want to make sure this doesn't happen again. How do I know you won't just upgrade me again next year?
+
+Agent: Well, to process the downgrade and refund, I actually need to transfer you to our Premium Services department. They handle all the Premium card changes and they'll be able to set up those protections for you.
+
+Customer: Are you serious? I have to talk to someone else now? I've already explained this whole thing to you.
+
+Agent: I'm sorry, but the Premium Services team has the authorization to process downgrades and refunds. I can only handle standard account inquiries. Let me get you transferred.
+
+Customer: This is exactly the kind of runaround that makes me want to cancel this card completely. How long is this going to take?
+
+Agent: The wait time for Premium Services is currently about 25 to 30 minutes. I can transfer you now.
+
+Customer: Thirty minutes? Forget it. I don't have time for this. I'll call back later, but this better get fixed.
+
+Agent: I understand your frustration sir. When you call back, reference case number PS-4471-0892 and that will have all your information ready for the next agent.
+
+Customer: Whatever. This is terrible service.

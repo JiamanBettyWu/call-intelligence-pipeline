@@ -1,0 +1,45 @@
+Agent: Thank you for calling Premier Credit Services, this is your customer service representative. How can I help you today?
+
+Customer: Yeah, hi. I'm calling about a late fee that was charged to my account and I think it's completely unfair. I've been a customer for like eight years and I've never had this happen before.
+
+Agent: I'd be happy to look into that for you. Can you please provide me with your account number?
+
+Customer: It's 4521-8834-9012-7766.
+
+Agent: Thank you. And can you verify the last four digits of your social security number for security purposes?
+
+Customer: 8429.
+
+Agent: Perfect, thank you. I can see your account here, Mr. Johnson. I show a $39 late fee that was assessed on March 15th. Your minimum payment of $87 was due on March 10th but wasn't received until March 18th.
+
+Customer: Right, but that's exactly my point. I set up autopay months ago and it didn't go through for some reason. This isn't my fault - it's a technical glitch or something on your end.
+
+Agent: I understand your frustration. Let me check your autopay settings. I can see that autopay was set up on January 12th, but it shows here that your bank returned the payment on March 10th due to insufficient funds.
+
+Customer: That's impossible. I had plenty of money in my account. I check my balance religiously.
+
+Agent: The return code from your bank indicates NSF - non-sufficient funds. This would have occurred when we attempted to process the payment early morning on March 10th.
+
+Customer: Look, even if that's true, which I don't think it is, I've been a loyal customer for eight years. I've never missed a payment before this. Can't you just waive the fee as a courtesy?
+
+Agent: I do see that you have an excellent payment history with us. However, our policy states that late fees can only be waived in cases of documented bank errors or verified system issues on our end. Since this was returned by your bank, I'm not able to reverse the charge.
+
+Customer: That's ridiculous. Thirty-nine dollars means nothing to a company like yours, but it matters to me. And I'm telling you this wasn't my mistake.
+
+Agent: I completely understand, and I wish I had more flexibility here. What I can do is help you set up account alerts so you'll get notified if any future autopay attempts fail.
+
+Customer: I don't want alerts, I want this fee removed. Can you transfer me to someone who can actually help me?
+
+Agent: I can certainly transfer you to a supervisor, but I want to set expectations - they follow the same policy guidelines that I do regarding late fee reversals.
+
+Customer: I don't care. At least they might actually listen to what I'm saying instead of just reading from a script.
+
+Agent: I understand your frustration, and I have been listening. Let me get a supervisor on the line for you. The hold time is approximately 8-10 minutes.
+
+Customer: Fine. But I'm not hanging up until this gets resolved. Eight years as a customer should count for something.
+
+Agent: I've made notes in your account about our conversation. The supervisor will be able to see that you're requesting a late fee waiver based on your payment history and your belief that the NSF return was in error.
+
+Customer: Good. And just so you know, if this doesn't get fixed, I'm seriously considering closing this account and going somewhere else.
+
+Agent: I've noted that as well. Please hold while I transfer you to my supervisor.

@@ -1,0 +1,51 @@
+Agent: Thank you for calling SecureCard customer service, this is your representative speaking. How can I help you today?
+
+Customer: Hi, yeah, I'm locked out of my account online and I can't get in. It's asking me these security questions and I have no idea what the answers are.
+
+Agent: I'm sorry to hear you're having trouble accessing your account. I can definitely help you with that. Can you please provide me with your card number so I can pull up your account?
+
+Customer: Sure, it's 4532 1098 7654 3210.
+
+Agent: Thank you. And can you confirm the last four digits of your Social Security number?
+
+Customer: 8847.
+
+Agent: Perfect, thank you Mr. Johnson. I can see your SecureCard Platinum account here. It looks like your online account was locked after multiple failed security question attempts. Can you tell me what security questions you're seeing?
+
+Customer: It's asking me about my first pet's name and the street I grew up on. I mean, I've had like six pets and moved around a lot as a kid. I honestly don't remember what I put when I set this up.
+
+Agent: I completely understand - that's actually pretty common. Let me see what options we have. I'm showing your account was opened in March 2019, so it's been a while since you set those up. Have you tried any variations of pet names or street names?
+
+Customer: Yeah, I tried everything I could think of. My dog Buster, my cat Whiskers, Maple Street, Oak Avenue... nothing worked and now it just says my account is locked.
+
+Agent: Okay, no problem. Since I have you on the phone and you've already verified your identity with your card number and Social Security number, I can unlock your account for you. But I'll need to verify a few more account details first.
+
+Customer: Alright, sure.
+
+Agent: Can you tell me your current billing address on file?
+
+Customer: 2847 Pine Ridge Drive, Austin, Texas 78704.
+
+Agent: Great. And what's your current credit limit on this card?
+
+Customer: Um, I think it's $8,500?
+
+Agent: That's correct. One more question - can you tell me the amount of your last payment and when it was made?
+
+Customer: Let me think... I made a payment last week for $247.83 on the 15th.
+
+Agent: Perfect, that all matches what I'm seeing here. I'm going to go ahead and unlock your online account now. I'm also going to reset your security questions so you can set up new ones that you'll remember.
+
+Customer: Oh great, thank you so much. This has been driving me crazy for like three days.
+
+Agent: I totally get that. Okay, your account is now unlocked. When you log in next, it's going to prompt you to create new security questions. Make sure to choose questions with answers you'll definitely remember.
+
+Customer: Will I be able to log in right away or do I need to wait?
+
+Agent: You should be able to log in immediately. The unlock is effective right now. Is there anything else I can help you with regarding your SecureCard Platinum account today?
+
+Customer: No, that should do it. Thanks for making that so easy - I was worried it was going to be a huge hassle.
+
+Agent: You're very welcome! We're here to help. Have a great rest of your day, Mr. Johnson.
+
+Customer: You too, thanks again.

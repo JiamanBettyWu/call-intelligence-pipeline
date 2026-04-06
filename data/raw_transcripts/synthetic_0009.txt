@@ -1,0 +1,45 @@
+Agent: Thank you for calling SecureCard customer service, this is your fraud prevention team. How can I help you today?
+
+Customer: Hi, yeah I'm looking at my credit card statement online and there's a charge on here that I definitely didn't make. It's for like $347 and I have no idea what it is.
+
+Agent: I'm sorry to hear about that unauthorized charge. I'll be happy to help you with this. Can you please provide me with your 16-digit card number so I can pull up your account?
+
+Customer: Sure, it's 4829-1156-8834-7721.
+
+Agent: Perfect, thank you. I have your account pulled up now. Can you tell me the specific amount and date of the transaction you're questioning?
+
+Customer: It's $347.89 and it was posted on December 15th. The merchant shows up as "TechWorld Solutions" but I've never heard of that company before.
+
+Agent: I see that transaction here on your account. TechWorld Solutions, $347.89 on December 15th. Do you recognize making any online purchases or giving your card information to anyone around that time?
+
+Customer: No, absolutely not. I'm really careful with my card. The last thing I bought was groceries at Kroger for like thirty bucks. This is really frustrating because I check my account pretty regularly.
+
+Agent: I completely understand your frustration. Let me check a few more details. I see the transaction was processed as a card-not-present purchase, meaning it was likely done online or over the phone. Your card is still in your possession, correct?
+
+Customer: Yes, I have my card right here with me. Look, I need this fixed today because I have bills coming out and this threw off my whole budget.
+
+Agent: Absolutely, I'm going to take care of this for you right now. Based on what you've told me, I'm filing this as a fraudulent transaction. I'm going to reverse the $347.89 charge immediately as a provisional credit while we investigate.
+
+Customer: Okay good. How long is this going to take though? And do I need to get a new card?
+
+Agent: The provisional credit will appear on your account within 24 hours. For your security, I do recommend we issue you a new card with a different number. I can have that expedited to you overnight at no charge.
+
+Customer: Yeah, that sounds good. I just want to make sure this doesn't happen again.
+
+Agent: I understand completely. The new card will be sent to your address on file at 428 Maple Drive, correct?
+
+Customer: Yes, that's right.
+
+Agent: Perfect. Your new card will arrive tomorrow by 5 PM and your current card will be deactivated as soon as we end this call. The reference number for your fraud claim is FR-2024-891456. Is there anything else I can help you with today?
+
+Customer: No, I think that covers it. So just to confirm - the $347.89 will be back in my account tomorrow and my new card comes tomorrow too?
+
+Agent: That's exactly right. You'll see the provisional credit post within 24 hours, and your new card will arrive by tomorrow evening. You can activate it using the phone number that comes with the card.
+
+Customer: Alright, thanks for getting this sorted out so quickly. I was worried this was going to be a huge headache.
+
+Agent: You're very welcome. We take fraud seriously and want to make this as easy as possible for you. Keep that reference number handy just in case, and don't hesitate to call if you need anything else.
+
+Customer: Will do. Thanks again.
+
+Agent: Have a great day and thank you for being a SecureCard customer.

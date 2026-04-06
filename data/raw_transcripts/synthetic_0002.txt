@@ -1,0 +1,61 @@
+Agent: Thank you for calling SecureCard customer service, this is your agent speaking. How can I help you today?
+
+Customer: Hi, I'm having trouble with my online account. I can't access the spending tracker feature that I've been using for months.
+
+Agent: I'd be happy to help you with that. Can I get your account number please?
+
+Customer: Sure, it's 4782-9156-3344-8821.
+
+Agent: Thank you. And can you verify the last four digits of your social security number?
+
+Customer: 7429.
+
+Agent: Perfect, I have your account pulled up here. So you're having trouble with the spending tracker feature?
+
+Customer: Yes, it's just completely gone from my dashboard. I use it every week to track my categories and it's been working fine since like March or April. Now when I log in, it's just not there anymore.
+
+Agent: I understand your frustration. Let me take a look at your account features. I can see you do have our Premium Rewards card which should include access to that feature. When did you first notice it was missing?
+
+Customer: Yesterday morning. I always check it on Sundays to see my weekly spending and it was just gone. I tried logging out and back in, cleared my browser cache, nothing worked.
+
+Agent: Okay, and you mentioned you've been using this feature since March or April - do you remember approximately when you started using it?
+
+Customer: I got the card in February and started using the spending tracker probably mid-March. It's been working perfectly until now.
+
+Agent: I see. Let me check something on our end. I'm looking at your account and I can see the spending tracker feature, but it appears there might be a technical issue preventing it from displaying properly on your dashboard.
+
+Customer: So this is a system problem, not something I did wrong?
+
+Agent: That's what it's looking like. I can see your account is in good standing, your card ending in 8821 shows a current balance of $1,247.83, and all your features should be active.
+
+Customer: Okay, so how do we fix this? I really need access to that tracker. I have a budget meeting with my spouse tonight and I need those category breakdowns.
+
+Agent: I understand the urgency. Let me try refreshing your account features from my end. This might take a moment.
+
+Customer: Alright.
+
+Agent: I've refreshed your account settings, but I'm still not seeing the spending tracker populate correctly on your profile. This appears to be a more complex technical issue than I can resolve from here.
+
+Customer: Are you kidding me? This is ridiculous. I've been a customer for almost a year, I pay my bill on time, and now I can't access a basic feature that's been working fine?
+
+Agent: I completely understand your frustration, and I apologize for this inconvenience. What I need to do is escalate this to our technical support team who can investigate this more thoroughly.
+
+Customer: How long is that going to take? And what am I supposed to do in the meantime?
+
+Agent: The technical team typically responds within 24 to 48 hours. I'm going to create a priority case for you since this is an ongoing feature that suddenly stopped working. Your case number will be TS-2024-8842.
+
+Customer: This is really frustrating. I shouldn't have to wait two days to access something I've been using for months.
+
+Agent: I absolutely agree, and I wish I could resolve this immediately for you. Is there anything else I can help you with today while we have your case escalated?
+
+Customer: No, I just want this fixed. Someone better call me back soon.
+
+Agent: They will contact you within 48 hours using the phone number on file. Is that still 555-203-8891?
+
+Customer: Yes, that's right. And they better have a solution.
+
+Agent: I've noted the urgency in your case file. Is there anything else I can assist with today?
+
+Customer: No, that's it. I'll be waiting for that call.
+
+Agent: Thank you for calling SecureCard, and again, I apologize for this inconvenience. Have a good day.

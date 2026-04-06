@@ -1,0 +1,63 @@
+Agent: Thank you for calling Premier Credit Services, this is customer support. How can I help you today?
+
+Customer: Hi, yeah, I'm having trouble getting into my online account. It keeps saying my account is locked and I can't log in at all.
+
+Agent: I'm sorry to hear you're having trouble accessing your account. Can I get your full account number to look into this for you?
+
+Customer: Sure, it's 4782-1156-9034-8821.
+
+Agent: Thank you. And can you verify the last four digits of the social security number on file?
+
+Customer: 7429.
+
+Agent: Perfect, thank you Mr. Johnson. I can see your Platinum Rewards card account here. You're right, there is a security lock on your online access as of yesterday, March 15th. It looks like there were multiple failed login attempts.
+
+Customer: That's ridiculous. I've been using the same password for months. I tried maybe three times yesterday when it wasn't working.
+
+Agent: I understand your frustration. The system automatically locks after five unsuccessful attempts within a 24-hour period. Were you perhaps using a different device or browser than usual?
+
+Customer: Well, yeah, I was on my work computer instead of my phone. But it's the same password. This is really annoying because I need to check my balance - I have a big purchase coming up.
+
+Agent: I can help you with your balance right now. Your current balance is $2,847.32 with an available credit limit of $7,152.68 on your $10,000 limit.
+
+Customer: Okay, that's helpful, but I still need to get back into my account. Can you unlock it?
+
+Agent: I can remove the security lock, but I'll need to verify a few more details first. Can you tell me the amount of your last payment and when it was made?
+
+Customer: Um, let me think... I think it was $350 and it was about two weeks ago? Maybe March 3rd or 4th?
+
+Agent: I show a payment of $375 posted on March 2nd. Close enough. Now, the issue might be that our system updated last week and some password requirements changed. Your current password might not meet the new criteria.
+
+Customer: Are you kidding me? Nobody told me about this. What are the new requirements?
+
+Agent: The new requirements include at least 12 characters with a mix of uppercase, lowercase, numbers, and special characters. I can unlock your account now, but you'll need to reset your password when you log in.
+
+Customer: Fine, whatever. Just unlock it so I can get in there.
+
+Agent: Alright, I've removed the security lock. You should be able to access the login page now, but you'll be prompted to create a new password that meets our updated security standards.
+
+Customer: Okay, let me try... I'm on the website now... okay it's asking me to reset my password like you said.
+
+Agent: Great. Once you create the new password, you should have full access to your account features including balance transfers, payment scheduling, and reward point redemption.
+
+Customer: It's asking for my security question answer too. The question is about my first pet's name.
+
+Agent: Yes, that's part of our enhanced security verification. You'll need to answer that to complete the password reset.
+
+Customer: Hmm, I'm not sure if I put "Buddy" or "buddy" - does capitalization matter?
+
+Agent: Try it with a capital B first, that's more common. If that doesn't work, try lowercase.
+
+Customer: Okay... "Buddy" worked. Now it's letting me create a new password... Alright, I think I'm in. I can see my account dashboard.
+
+Agent: Excellent! Is everything displaying correctly? Can you see your recent transactions and current balance?
+
+Customer: Yeah, I can see everything now. Though this new password requirement is going to be hard to remember.
+
+Agent: I understand it's an adjustment. The enhanced security helps protect your account from unauthorized access. Is there anything else I can help you with today?
+
+Customer: No, I think that covers it. Thanks for getting it unlocked, even though this whole thing was pretty frustrating.
+
+Agent: You're welcome, and I apologize for the inconvenience with the system update. Your account is now fully accessible. Have a great day!
+
+Customer: Yeah, you too. Bye.
