@@ -59,14 +59,12 @@ A small hand-labeled eval set (`data/eval_labels.csv`, 15 transcripts) provides 
 Overall accuracy:        63.6%   (7/11 correct)
 
 Per-category accuracy:
-  billing_dispute              100%
-  fraud_or_unauthorized_charge  80%
-  product_or_feature_issue      75%
-  agent_error_or_misinformation 50%   ← boundary case with policy_disagreement
-  technical_issue              100%
-  policy_disagreement           67%
-  account_access               100%
-  other                         50%
+  account_access                      0.0%
+  agent_error_or_misinformation       100.0%
+  billing_dispute                     50.0%
+  fraud_or_unauthorized_charge        100.0%
+  product_or_feature_issue            0.0%
+  technical_issue                     100.0%
 ```
 
 The `agent_error` / `policy_disagreement` confusion is the most instructive failure. Both categories involve a customer who feels wronged by the company, but the root cause differs: one is human error, the other is a structural policy the customer disagrees with. The prompt now surfaces that distinction explicitly; consistency improved across iterations.
@@ -78,7 +76,7 @@ A second LLM call reads the source transcript and the generated summary, flaggin
 This is imperfect — an LLM judge has its own error modes — but it's scalable in a way human review of every summary isn't. The output is a confidence score and a list of flagged claims, both of which can be logged and monitored over time.
 
 ```
-Hallucination rate:   8%   (2/25 summaries flagged)
+Hallucination rate:   6.7%   (2/30 summaries flagged)
 ```
 
 Both flagged cases involved the model inferring resolution outcomes ("the agent resolved the issue") from agent language that was actually inconclusive ("I'll look into that for you"). This is a prompt-level fix: the summary prompt now instructs the model to distinguish confirmed outcomes from stated intentions.
@@ -90,7 +88,7 @@ The same transcript was run three times. Category label, resolution flag, and se
 Non-determinism is a production risk, not just a research curiosity. A model that classifies the same call as `billing_dispute` on Monday and `policy_disagreement` on Thursday is not a reliable input to downstream analytics or monitoring systems.
 
 ```
-Category stability:    80%   (4/5 transcripts consistent across 3 runs)
+Category stability:    100%   (5/5 transcripts consistent across 3 runs)
 Resolution stability:  100%  (5/5 consistent)
 ```
 
@@ -117,6 +115,7 @@ call-intelligence-pipeline/
 ├── notebooks/
 │   └── exploration.ipynb       # prompt iteration, error analysis, label review
 ├── README.md
+├── run.py
 └── requirements.txt
 ```
 
@@ -137,12 +136,7 @@ python -c "from ingest import load_transcripts; load_transcripts('synthetic', n=
 
 **Run batch pipeline:**
 ```bash
-python -c "
-from ingest import load_transcripts
-from pipeline import run_batch
-transcripts = load_transcripts('data/synthetic_transcripts.json')
-run_batch([{'id': t.id, 'text': t.text} for t in transcripts])
-"
+python run.py
 ```
 
 **Run evaluation:**

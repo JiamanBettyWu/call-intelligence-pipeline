@@ -432,7 +432,7 @@ def write_report(
         f"  Labeled transcripts:  {report.n_labeled}",
         f"  Overall accuracy:     {report.category_accuracy:.1%}",
         "",
-        "  Per-:",
+        "  Per-category accuracy:",
     ]
     for cat, acc in sorted(report.category_breakdown.items()):
         lines.append(f"    {cat:<35} {acc:.1%}")

@@ -1,7 +1,14 @@
 {
-  "n_labeled": 0,
-  "category_accuracy": 0.0,
-  "category_breakdown": {},
+  "n_labeled": 11,
+  "category_accuracy": 0.636,
+  "category_breakdown": {
+    "fraud_or_unauthorized_charge": 1.0,
+    "product_or_feature_issue": 0.0,
+    "account_access": 0.0,
+    "technical_issue": 1.0,
+    "billing_dispute": 0.5,
+    "agent_error_or_misinformation": 1.0
+  },
   "n_hallucination_checked": 30,
   "hallucination_rate": 0.067,
   "n_consistency_checked": 5,
@@ -9,13 +16,19 @@
   "resolution_stability_rate": 1.0,
   "per_transcript": {
     "synthetic_0000": {
+      "category_eval": {
+        "transcript_id": "synthetic_0000",
+        "predicted": "fraud_or_unauthorized_charge",
+        "ground_truth": "fraud_or_unauthorized_charge",
+        "correct": true
+      },
       "hallucination_eval": {
         "transcript_id": "synthetic_0000",
         "summary": "The customer called about two unauthorized $29.99 charges from \"FitFlow Premium\" on their credit card statement that they never signed up for. The agent initiated a dispute for both the October and November charges totaling $59.98, provided a temporary credit within 1-2 business days, and blocked future charges from that merchant. The call ended with the customer receiving a dispute reference number (DP-887432) and confirmation that they would receive an email with the details.",
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amounts, dispute process, reference number, and outcome.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amounts, dispute process, temporary credit timeline, merchant blocking, and reference number.\"\n}"
       },
       "consistency_eval": {
         "transcript_id": "synthetic_0000",
@@ -40,46 +53,20 @@
         "sentiment_end_stable": true
       }
     },
-    "synthetic_0001": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0001",
-        "summary": "The customer called about a fraudulent $347.82 charge from TechWorld Electronics in Denver that they didn't recognize, and questioned a $156.43 Best Buy charge they were uncertain about. The agent initiated a dispute for the TechWorld charge, issued a provisional credit, and canceled the customer's card with a replacement arriving in 7-10 business days, but advised the customer to verify the Best Buy transaction independently before disputing it. The call ended with the customer accepting this resolution while expressing frustration about the inconvenience of being without a card for a week.",
-        "hallucination_detected": false,
-        "flagged_claims": [],
-        "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amounts, dispute process, card cancellation, replacement timeline, and customer's expressed frustration.\"\n}"
-      },
-      "consistency_eval": {
-        "transcript_id": "synthetic_0001",
-        "n_runs": 3,
-        "category_values": [
-          "fraud_or_unauthorized_charge",
-          "fraud_or_unauthorized_charge",
-          "fraud_or_unauthorized_charge"
-        ],
-        "resolution_values": [
-          true,
-          true,
-          true
-        ],
-        "category_stable": true,
-        "resolution_stable": true,
-        "sentiment_end_values": [
-          "negative",
-          "negative",
-          "negative"
-        ],
-        "sentiment_end_stable": true
-      }
-    },
     "synthetic_0002": {
+      "category_eval": {
+        "transcript_id": "synthetic_0002",
+        "predicted": "technical_issue",
+        "ground_truth": "product_or_feature_issue",
+        "correct": false
+      },
       "hallucination_eval": {
         "transcript_id": "synthetic_0002",
         "summary": "The customer called because the spending tracker feature on their online account dashboard had disappeared after working properly for months since March. The agent verified the customer's account, attempted to refresh the account features, but was unable to resolve the technical issue and escalated it to the technical support team, creating priority case TS-2024-8842. The call ended with the agent informing the customer that technical support would contact them within 24-48 hours at their phone number on file.",
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the timeline since March, the case number TS-2024-8842, the escalation process, and the 24-48 hour contact timeframe.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the missing spending tracker feature, March timeframe, agent's troubleshooting attempts, case number TS-2024-8842, and 24-48 hour callback timeline.\"\n}"
       },
       "consistency_eval": {
         "transcript_id": "synthetic_0002",
@@ -105,13 +92,19 @@
       }
     },
     "synthetic_0003": {
+      "category_eval": {
+        "transcript_id": "synthetic_0003",
+        "predicted": "agent_error_or_misinformation",
+        "ground_truth": "account_access",
+        "correct": false
+      },
       "hallucination_eval": {
         "transcript_id": "synthetic_0003",
         "summary": "The customer called because they were told by an agent last week that their cash advance limit was $3,000, but their ATM withdrawal for $1,500 was declined. The agent discovered the previous agent had mistakenly given the customer incorrect information about their cash advance limit, which was actually $1,000, and successfully processed an expedited increase to $3,000 due to the error and the customer's excellent account history. The call ended with the customer satisfied after receiving immediate approval for the limit increase and being advised to wait 30 minutes before attempting the ATM withdrawal.",
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the incorrect $3,000 limit information, the actual $1,000 limit, the expedited increase approval, and the 30-minute wait instruction.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the timeline, amounts, agent error, limit increase process, and customer satisfaction outcome.\"\n}"
       },
       "consistency_eval": {
         "transcript_id": "synthetic_0003",
@@ -137,13 +130,19 @@
       }
     },
     "synthetic_0004": {
+      "category_eval": {
+        "transcript_id": "synthetic_0004",
+        "predicted": "technical_issue",
+        "ground_truth": "technical_issue",
+        "correct": true
+      },
       "hallucination_eval": {
         "transcript_id": "synthetic_0004",
         "summary": "The customer contacted support because her online account was locked and she couldn't log in despite multiple attempts over an hour. The agent unlocked her account, explained the issue was caused by a system update on the company's end, sent a password reset email, and processed a $500 payment over the phone when the customer expressed concern about avoiding late fees. The call ended with the agent advising the customer to try the password reset and call back tomorrow afternoon if she still experiences login issues after the technical problems are fully resolved.",
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information present in the transcript, with no contradictions or unsupported assertions detected.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information provided in the transcript, with no additions, contradictions, or unverifiable assertions.\"\n}"
       },
       "consistency_eval": {
         "transcript_id": "synthetic_0004",
@@ -169,13 +168,149 @@
       }
     },
     "synthetic_0005": {
+      "category_eval": {
+        "transcript_id": "synthetic_0005",
+        "predicted": "billing_dispute",
+        "ground_truth": "billing_dispute",
+        "correct": true
+      },
       "hallucination_eval": {
         "transcript_id": "synthetic_0005",
         "summary": "The customer called to dispute a $39 late fee, claiming their autopay failed due to a technical issue rather than insufficient funds as indicated by their bank's return code. The agent explained the company's policy that late fees can only be waived for documented bank errors or system issues on their end, and offered to set up account alerts, but the customer refused this solution. The call ended with the agent transferring the customer to a supervisor after the customer threatened to close their account if the fee wasn't removed.",
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the fee amount, dispute reason, policy explanation, offered solution, and transfer to supervisor.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the fee amount, dispute reason, policy explanation, agent's offer, customer's refusal, and the transfer to supervisor after the account closure threat.\"\n}"
+      }
+    },
+    "synthetic_0011": {
+      "category_eval": {
+        "transcript_id": "synthetic_0011",
+        "predicted": "agent_error_or_misinformation",
+        "ground_truth": "agent_error_or_misinformation",
+        "correct": true
+      },
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0011",
+        "summary": "The customer called frustrated about receiving incorrect information the previous day regarding a $347.82 charge from \"Premium Lifestyle Services\" that she was told would be immediately reversed as fraud, but the dispute was actually denied and she discovered there were three monthly recurring charges totaling over $1,000. The agent reviewed the account, confirmed the three charges from January through March, and escalated the case to the specialized dispute resolution team due to the complexity and previous misinformation. The call ended with the customer receiving escalation case number 847291 and a promise that the dispute resolution team would call her back within 24 hours to investigate all three charges.",
+        "hallucination_detected": false,
+        "flagged_claims": [],
+        "confidence": 0.95,
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and information provided in the transcript.\"\n}"
+      }
+    },
+    "synthetic_0017": {
+      "category_eval": {
+        "transcript_id": "synthetic_0017",
+        "predicted": "fraud_or_unauthorized_charge",
+        "ground_truth": "fraud_or_unauthorized_charge",
+        "correct": true
+      },
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0017",
+        "summary": "The customer called to report two unauthorized charges totaling $444.42 from GameStop Online and Best Buy Mobile that appeared on their December statement. The agent initiated a fraud investigation, canceled the customer's card with a replacement to arrive in 2 business days, and issued temporary credit only for the GameStop charge due to its suspicious timing, while explaining that the Best Buy charge required additional review because it showed in-store verification steps including PIN entry. The call ended with the agent transferring the customer to a supervisor to discuss getting both charges removed, as the customer was dissatisfied with only receiving partial temporary credit.",
+        "hallucination_detected": true,
+        "flagged_claims": [
+          "The customer called to report two unauthorized charges totaling $444.42"
+        ],
+        "confidence": 0.9,
+        "raw_judge_output": "{\n  \"hallucination_detected\": true,\n  \"flagged_claims\": [\"The customer called to report two unauthorized charges totaling $444.42\"],\n  \"confidence\": 0.9,\n  \"reasoning\": \"The transcript shows the two charges were $287.99 and $156.43, which totals $444.42, but the customer explicitly stated they 'can't afford to be out almost $450', indicating the actual total mentioned was approximately $450, not the precise $444.42 calculation.\"\n}"
+      }
+    },
+    "synthetic_0018": {
+      "category_eval": {
+        "transcript_id": "synthetic_0018",
+        "predicted": "technical_issue",
+        "ground_truth": "product_or_feature_issue",
+        "correct": false
+      },
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0018",
+        "summary": "The customer contacted SecureCard because their spending tracker feature had disappeared from their online account dashboard three days prior due to a system update error that temporarily disabled premium features. The agent re-enabled the customer's SecureInsights package access, escalated the issue to the technical team to prevent future occurrences, and confirmed that all historical spending data remained intact. The call ended successfully after the customer verified they could see their spending tracker and data had been restored.",
+        "hallucination_detected": false,
+        "flagged_claims": [],
+        "confidence": 0.95,
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information presented in the transcript, with no contradictions or unsupported assertions identified.\"\n}"
+      }
+    },
+    "synthetic_0020": {
+      "category_eval": {
+        "transcript_id": "synthetic_0020",
+        "predicted": "technical_issue",
+        "ground_truth": "technical_issue",
+        "correct": true
+      },
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0020",
+        "summary": "The customer called because their online account was locked and they couldn't log in to pay their bill, with the lock triggered by multiple unsuccessful login attempts on November 8th. The agent verified the customer's identity, provided the current balance and payment due information, but was unable to unlock the account due to system errors, so they escalated the issue to technical support and updated the customer's phone number. The call ended with the agent providing case number TC-2024-8839 and informing the customer that technical support would contact them within 48 hours to resolve the account access issue.",
+        "hallucination_detected": false,
+        "flagged_claims": [],
+        "confidence": 0.95,
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and events described in the transcript.\"\n}"
+      }
+    },
+    "synthetic_0025": {
+      "category_eval": {
+        "transcript_id": "synthetic_0025",
+        "predicted": "fraud_or_unauthorized_charge",
+        "ground_truth": "fraud_or_unauthorized_charge",
+        "correct": true
+      },
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0025",
+        "summary": "The customer called to dispute an $847.32 charge from \"TechWorld Electronics\" that they claimed was fraudulent and that they did not make. The agent processed a temporary credit to the customer's account, initiated a fraud investigation that could take up to 10 business days, and expedited a replacement card to arrive by March 18th. The call ended with the customer accepting these actions despite expressing frustration about having to wait for the investigation to complete.",
+        "hallucination_detected": false,
+        "flagged_claims": [],
+        "confidence": 0.95,
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amount, merchant name, temporary credit, investigation timeline, replacement card delivery date, and customer's reaction.\"\n}"
+      }
+    },
+    "synthetic_0029": {
+      "category_eval": {
+        "transcript_id": "synthetic_0029",
+        "predicted": "product_or_feature_issue",
+        "ground_truth": "billing_dispute",
+        "correct": false
+      },
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0029",
+        "summary": "The customer called to dispute a $39 late fee, explaining that they had set up autopay but the payment was still late because autopay was scheduled for March 15th while the due date was March 12th. The agent verified the customer's account information, explained that the late fee was valid since payment was received after the due date, updated the autopay settings to prevent future issues, but could not waive the fee due to company policy. The call ended with the agent transferring the customer to a supervisor after the customer requested to speak with someone who could potentially remove the fee, and the customer expressed they might cancel their card if the issue wasn't resolved.",
+        "hallucination_detected": false,
+        "flagged_claims": [],
+        "confidence": 0.95,
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the fee amount, dates, autopay issue, policy explanation, and call resolution.\"\n}"
+      }
+    },
+    "synthetic_0001": {
+      "hallucination_eval": {
+        "transcript_id": "synthetic_0001",
+        "summary": "The customer called about a fraudulent $347.82 charge from TechWorld Electronics in Denver that they didn't recognize, and questioned a $156.43 Best Buy charge they were uncertain about. The agent initiated a dispute for the TechWorld charge, issued a provisional credit, and canceled the customer's card with a replacement arriving in 7-10 business days, but advised the customer to verify the Best Buy transaction independently before disputing it. The call ended with the customer accepting this resolution while expressing frustration about the inconvenience of being without a card for a week.",
+        "hallucination_detected": false,
+        "flagged_claims": [],
+        "confidence": 0.95,
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and details from the transcript, including the charge amounts, dispute process, card cancellation, and customer's expressed frustration.\"\n}"
+      },
+      "consistency_eval": {
+        "transcript_id": "synthetic_0001",
+        "n_runs": 3,
+        "category_values": [
+          "fraud_or_unauthorized_charge",
+          "fraud_or_unauthorized_charge",
+          "fraud_or_unauthorized_charge"
+        ],
+        "resolution_values": [
+          true,
+          true,
+          true
+        ],
+        "category_stable": true,
+        "resolution_stable": true,
+        "sentiment_end_values": [
+          "negative",
+          "negative",
+          "negative"
+        ],
+        "sentiment_end_stable": true
       }
     },
     "synthetic_0006": {
@@ -185,7 +320,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information provided in the transcript, with no added details or contradictions.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the lockout reason, verification steps, resolution actions, and customer satisfaction.\"\n}"
       }
     },
     "synthetic_0007": {
@@ -195,7 +330,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information found in the transcript, including specific numbers, processes, and outcomes discussed during the call.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the credit limit amounts, customer's payment history, income increase, agent's actions, reference number, and timeline.\"\n}"
       }
     },
     "synthetic_0008": {
@@ -205,7 +340,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the charge amount, duration, dispute reference number, provisional credit total, timeline, and call resolution.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the charge amount, duration, merchant name, provisional credit total, case reference number, timeline, and call resolution.\"\n}"
       }
     },
     "synthetic_0009": {
@@ -215,7 +350,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements made in the transcript, including the charge amount, merchant name, date, provisional credit timeline, card replacement details, and reference number.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the charge amount, merchant name, date, resolution steps, and reference number.\"\n}"
       }
     },
     "synthetic_0010": {
@@ -225,17 +360,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the timeline, technical details, resolution steps, and reference number.\"\n}"
-      }
-    },
-    "synthetic_0011": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0011",
-        "summary": "The customer called frustrated about receiving incorrect information the previous day regarding a $347.82 charge from \"Premium Lifestyle Services\" that she was told would be immediately reversed as fraud, but the dispute was actually denied and she discovered there were three monthly recurring charges totaling over $1,000. The agent reviewed the account, confirmed the three charges from January through March, and escalated the case to the specialized dispute resolution team due to the complexity and previous misinformation. The call ended with the customer receiving escalation case number 847291 and a promise that the dispute resolution team would call her back within 24 hours to investigate all three charges.",
-        "hallucination_detected": false,
-        "flagged_claims": [],
-        "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information provided in the transcript, including the charge amount, merchant name, number of charges, escalation case number, and timeline for follow-up.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the problem description, timeline, system update date, agent actions, and reference number.\"\n}"
       }
     },
     "synthetic_0012": {
@@ -245,7 +370,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the reason for calling, the November 15th lock date, the identity verification process, and the successful resolution.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information stated in the transcript, including the reason for calling, the November 15th lock date, the resolution process, and the successful outcome.\"\n}"
       }
     },
     "synthetic_0013": {
@@ -255,7 +380,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the $39 late fee amount, the $19.50 partial credit offer, the two-day payment delay, and the autopay adjustment to three business days earlier.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are accurately supported by the transcript, including the specific fee amount, credit offered, and resolution details.\"\n}"
       }
     },
     "synthetic_0014": {
@@ -267,7 +392,7 @@
           "Account Security would contact her within 24-48 business hours"
         ],
         "confidence": 0.9,
-        "raw_judge_output": "{\n  \"hallucination_detected\": true,\n  \"flagged_claims\": [\"Account Security would contact her within 24-48 business hours\"],\n  \"confidence\": 0.9,\n  \"reasoning\": \"The agent stated '24 to 48 business hours' in the transcript, but the summary claims '24-48 business hours' without the word 'business', which changes the timeframe significantly.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": true,\n  \"flagged_claims\": [\"Account Security would contact her within 24-48 business hours\"],\n  \"confidence\": 0.9,\n  \"reasoning\": \"The agent specifically said '24 to 48 business hours' in the transcript, but the summary states '24-48 business hours' without the 'business' qualifier, which changes the timeframe significantly.\"\n}"
       }
     },
     "synthetic_0015": {
@@ -287,29 +412,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amounts, dates, resolution details, and customer's final acceptance of the partial refund.\"\n}"
-      }
-    },
-    "synthetic_0017": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0017",
-        "summary": "The customer called to report two unauthorized charges totaling $444.42 from GameStop Online and Best Buy Mobile that appeared on their December statement. The agent initiated a fraud investigation, canceled the customer's card with a replacement to arrive in 2 business days, and issued temporary credit only for the GameStop charge due to its suspicious timing, while explaining that the Best Buy charge required additional review because it showed in-store verification steps including PIN entry. The call ended with the agent transferring the customer to a supervisor to discuss getting both charges removed, as the customer was dissatisfied with only receiving partial temporary credit.",
-        "hallucination_detected": true,
-        "flagged_claims": [
-          "The customer called to report two unauthorized charges totaling $444.42"
-        ],
-        "confidence": 0.9,
-        "raw_judge_output": "{\n  \"hallucination_detected\": true,\n  \"flagged_claims\": [\"The customer called to report two unauthorized charges totaling $444.42\"],\n  \"confidence\": 0.9,\n  \"reasoning\": \"The transcript states the charges were $287.99 and $156.43, which totals $444.42, but the customer explicitly said they 'can't afford to be out almost $450', indicating the actual total was closer to $450, not exactly $444.42.\"\n}"
-      }
-    },
-    "synthetic_0018": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0018",
-        "summary": "The customer contacted SecureCard because their spending tracker feature had disappeared from their online account dashboard three days prior due to a system update error that temporarily disabled premium features. The agent re-enabled the customer's SecureInsights package access, escalated the issue to the technical team to prevent future occurrences, and confirmed that all historical spending data remained intact. The call ended successfully after the customer verified they could see their spending tracker and data had been restored.",
-        "hallucination_detected": false,
-        "flagged_claims": [],
-        "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information provided in the transcript, including the timeline, cause of the issue, resolution steps, and successful outcome.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and details from the transcript, with no contradictions or unsupported information added.\"\n}"
       }
     },
     "synthetic_0019": {
@@ -319,17 +422,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information stated in the transcript, with no contradictions or unsupported assertions detected.\"\n}"
-      }
-    },
-    "synthetic_0020": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0020",
-        "summary": "The customer called because their online account was locked and they couldn't log in to pay their bill, with the lock triggered by multiple unsuccessful login attempts on November 8th. The agent verified the customer's identity, provided the current balance and payment due information, but was unable to unlock the account due to system errors, so they escalated the issue to technical support and updated the customer's phone number. The call ended with the agent providing case number TC-2024-8839 and informing the customer that technical support would contact them within 48 hours to resolve the account access issue.",
-        "hallucination_detected": false,
-        "flagged_claims": [],
-        "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information present in the transcript, including specific details like the date, case number, timeframe, and sequence of events.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information stated in the transcript, including the dispute amount, timeframes, locations, and actions taken by the agent.\"\n}"
       }
     },
     "synthetic_0021": {
@@ -339,7 +432,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and details found in the transcript, including the payment amounts, dates, processing times, customer history, and resolution details.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the dispute amount, payment dates, processing explanation, customer history, and resolution details.\"\n}"
       }
     },
     "synthetic_0022": {
@@ -349,7 +442,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the lockout reason, verification process, verification code arrangement, transaction inquiry, and email confirmation details.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the account lockout reason, identity verification process, verification code arrangement, transaction inquiry, and email confirmation details.\"\n}"
       }
     },
     "synthetic_0023": {
@@ -359,7 +452,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the charge amount, date, upgrade process, agent's offer, transfer requirements, wait time, and case number.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements in the transcript, including the charge amount, date, automatic upgrade process, agent's offer, transfer requirement, wait time, and case number.\"\n}"
       }
     },
     "synthetic_0024": {
@@ -369,17 +462,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information stated in the transcript, including the charge amount, duration, total disputed amount, resolution steps, and customer satisfaction.\"\n}"
-      }
-    },
-    "synthetic_0025": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0025",
-        "summary": "The customer called to dispute an $847.32 charge from \"TechWorld Electronics\" that they claimed was fraudulent and that they did not make. The agent processed a temporary credit to the customer's account, initiated a fraud investigation that could take up to 10 business days, and expedited a replacement card to arrive by March 18th. The call ended with the customer accepting these actions despite expressing frustration about having to wait for the investigation to complete.",
-        "hallucination_detected": false,
-        "flagged_claims": [],
-        "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amount, merchant name, temporary credit processing, investigation timeline, replacement card delivery date, and customer's emotional response.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the charge amount, duration, total disputed amount, resolution steps, and customer satisfaction.\"\n}"
       }
     },
     "synthetic_0026": {
@@ -389,7 +472,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information found in the transcript, including specific details like the ticket number, timeframe, and customer requests.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information present in the transcript, with no additions, contradictions, or unverifiable assertions.\"\n}"
       }
     },
     "synthetic_0027": {
@@ -399,7 +482,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and actions described in the transcript, with no contradictions or unsupported assertions found.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by specific statements and actions described in the transcript.\"\n}"
       }
     },
     "synthetic_0028": {
@@ -409,17 +492,7 @@
         "hallucination_detected": false,
         "flagged_claims": [],
         "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the account lockout reason, failed login attempts on a different device, password requirement changes, agent verification process, security lock removal, and successful password reset completion.\"\n}"
-      }
-    },
-    "synthetic_0029": {
-      "hallucination_eval": {
-        "transcript_id": "synthetic_0029",
-        "summary": "The customer called to dispute a $39 late fee, explaining that they had set up autopay but the payment was still late because autopay was scheduled for March 15th while the due date was March 12th. The agent verified the customer's account information, explained that the late fee was valid since payment was received after the due date, updated the autopay settings to prevent future issues, but could not waive the fee due to company policy. The call ended with the agent transferring the customer to a supervisor after the customer requested to speak with someone who could potentially remove the fee, and the customer expressed they might cancel their card if the issue wasn't resolved.",
-        "hallucination_detected": false,
-        "flagged_claims": [],
-        "confidence": 0.95,
-        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by information present in the transcript, with no contradictions or unsupported assertions.\"\n}"
+        "raw_judge_output": "{\n  \"hallucination_detected\": false,\n  \"flagged_claims\": [],\n  \"confidence\": 0.95,\n  \"reasoning\": \"All claims in the summary are directly supported by the transcript, including the account lock due to failed login attempts, the password issue with new requirements, the verification process, and the successful resolution.\"\n}"
       }
     }
   }

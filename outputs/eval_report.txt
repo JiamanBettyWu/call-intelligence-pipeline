@@ -2,11 +2,17 @@
 CALL INTELLIGENCE PIPELINE — EVALUATION REPORT
 ============================================================
 
-CATEGORY ACCURACY
+
   Labeled transcripts:  11
   Overall accuracy:     63.6%
 
   Per-category accuracy:
+    account_access                      0.0%
+    agent_error_or_misinformation       100.0%
+    billing_dispute                     50.0%
+    fraud_or_unauthorized_charge        100.0%
+    product_or_feature_issue            0.0%
+    technical_issue                     100.0%
 
 HALLUCINATION DETECTION (LLM-as-judge)
   Transcripts checked:  30
