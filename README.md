@@ -177,7 +177,7 @@ Weave's LLM call tracing also addresses the audit trail requirement directly: ev
 
 ### 3. Human-in-the-loop annotation
 
-The current eval set is 15 hand-labeled transcripts — enough to catch obvious failures, not enough to characterize model behavior across the full distribution of real calls. A HITL annotation loop would pipe low-confidence predictions (e.g. `resolution_confidence < 0.6`, or any transcript where the model's category is unstable across consistency runs) to a review queue for human correction. Those corrections feed back into the eval set, which grows over time into a reliable benchmark. This is also how you generate fine-tuning data if the team decides to move from prompt engineering on a frontier model toward a smaller, cheaper, fine-tuned model for high-volume inference.
+The current eval set is 11 hand-labeled transcripts — enough to catch obvious failures, not enough to characterize model behavior across the full distribution of real calls. A HITL annotation loop would pipe low-confidence predictions (e.g. `resolution_confidence < 0.6`, or any transcript where the model's category is unstable across consistency runs) to a review queue for human correction. Those corrections feed back into the eval set, which grows over time into a reliable benchmark. This is also how you generate fine-tuning data if the team decides to move from prompt engineering on a frontier model toward a smaller, cheaper, fine-tuned model for high-volume inference.
 
 ---
 
