@@ -38,7 +38,7 @@ outputs/results.json
 outputs/eval_report.txt
 ```
 
-Graph pipeline (pipeline_graph.py)
+Graph pipeline (`pipeline_graph.py`)
 
 ```
 START
@@ -73,7 +73,7 @@ summarize      categorize        sentiment     ← parallel fan-out
 Each task — summary, category, sentiment, resolution — has its own prompt and its own output. This makes the system debuggable: if category accuracy degrades, I can isolate and fix that prompt without touching the others. A single mega-prompt is a black box; four small ones are individually evaluable and monitorable. The tradeoff is latency (~2–4s per transcript vs ~1s). For a batch offline workload, that's acceptable.
 
 ### Why two execution models
-`pipeline.py` was built first, without an orchestration framework, to understand the primitive operations — prompt construction, response parsing, error handling — before abstracting them. `pipeline_graph.py` was built second, as a LangGraph refactor, to solve two specific problems the sequential version can't address cleanly: independent tasks running serially when they don't need to, and conditional routing logic that belongs inside the pipeline rather than in post-processing. Both versions produce identical `PipelineResult` outputs and can be evaluated with the same evaluate.py.
+`pipeline.py` was built first, without an orchestration framework, to understand the primitive operations — prompt construction, response parsing, error handling — before abstracting them. `pipeline_graph.py` was built second, as a LangGraph refactor, to solve two specific problems the sequential version can't address cleanly: independent tasks running serially when they don't need to, and conditional routing logic that belongs inside the pipeline rather than in post-processing. Both versions produce identical `PipelineResult` outputs and can be evaluated with the same `evaluate.py`.
 
 ---
 
