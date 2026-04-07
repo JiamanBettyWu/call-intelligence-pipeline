@@ -1,6 +1,6 @@
 # Call Complaint Intelligence Pipeline
 
-An end-to-end pipeline for extracting structured intelligence from customer service call transcripts — summary, root cause classification, sentiment arc, and resolution signal — with a three-layer evaluation framework.
+An end-to-end pipeline for extracting structured intelligence from customer service call transcripts — summary, root cause classification, sentiment arc, and resolution signal — with a three-layer evaluation framework and two execution models: a sequential baseline and a LangGraph-orchestrated version with conditional routing.
 
 Built as a focused exploration of applied LLM engineering for unstructured conversational data.
 
@@ -14,6 +14,7 @@ Customer service calls are dense with signal: what went wrong, how the customer 
 
 ## Architecture
 
+Sequential pipeline (`pipeline.py`)
 ```
 raw transcript
       │
@@ -37,13 +38,42 @@ outputs/results.json
 outputs/eval_report.txt
 ```
 
+Graph pipeline (pipeline_graph.py)
+
+```
+START
+  │
+  ▼
+ingest
+  │
+  ├─────────────────┬─────────────────┐
+  ▼                 ▼                 ▼
+summarize      categorize        sentiment     ← parallel fan-out
+  │                 │                 │
+  └─────────────────┴─────────────────┘
+                    │
+                    ▼
+                 resolve
+                    │
+        ┌───────────┴───────────┐
+        ▼                       ▼
+  confidence ≥ 0.6        confidence < 0.6    ← conditional routing
+        │                       │
+        ▼                       ▼
+    finalize                 escalate
+                                │
+                                ▼
+                            finalize
+
+```
+
+
 ### Why four separate LLM calls instead of one prompt
 
 Each task — summary, category, sentiment, resolution — has its own prompt and its own output. This makes the system debuggable: if category accuracy degrades, I can isolate and fix that prompt without touching the others. A single mega-prompt is a black box; four small ones are individually evaluable and monitorable. The tradeoff is latency (~2–4s per transcript vs ~1s). For a batch offline workload, that's acceptable.
 
-### Why no orchestration framework
-
-The pipeline calls the Anthropic API directly without LangChain or LangGraph. The decision was deliberate: I wanted to understand the primitive operations — prompt construction, response parsing, error handling, retry logic — before abstracting them. LangGraph is the natural next step for parallelizing the four inference tasks and adding structured retry and fallback behavior (see [What's Next](#whats-next)).
+### Why two execution models
+`pipeline.py` was built first, without an orchestration framework, to understand the primitive operations — prompt construction, response parsing, error handling — before abstracting them. `pipeline_graph.py` was built second, as a LangGraph refactor, to solve two specific problems the sequential version can't address cleanly: independent tasks running serially when they don't need to, and conditional routing logic that belongs inside the pipeline rather than in post-processing. Both versions produce identical `PipelineResult` outputs and can be evaluated with the same evaluate.py.
 
 ---
 
@@ -106,16 +136,21 @@ call-intelligence-pipeline/
 │   └── eval_labels.csv         # hand-labeled ground truth (15 transcripts)
 ├── src/
 │   ├── ingest.py               # loading, normalization, synthetic generation
-│   ├── pipeline.py             # LLM inference layer
+│   ├── pipeline.py             # sequential LLM inference layer
+│   ├── pipeline_graph.py       # LangGraph refactor with parallel fan-out and conditional routing
 │   └── evaluate.py             # three-layer eval framework
 ├── outputs/
-│   ├── results.json            # pipeline outputs (batch run)
+│   ├── results.json            # sequential pipeline outputs
+│   ├── results_graph.json      # graph pipeline outputs
 │   ├── eval_results.json       # full eval output (machine-readable)
 │   └── eval_report.txt         # human-readable eval summary
 ├── notebooks/
 │   └── exploration.ipynb       # prompt iteration, error analysis, label review
+├── run.py                      # batch entry point — sequential pipeline
+├── run_graph.py                # batch entry point — graph pipeline
+├── .env                        # ANTHROPIC_API_KEY (not committed)
+├── .gitignore
 ├── README.md
-├── run.py
 └── requirements.txt
 ```
 
@@ -124,9 +159,15 @@ call-intelligence-pipeline/
 ## Setup
 
 ```bash
-pip install anthropic
+python -m venv .venv
+source .venv/bin/activate
+pip install anthropic langgraph python-dotenv
+pip freeze > requirements.txt
+```
 
-export ANTHROPIC_API_KEY=your_key_here
+Add to `.env`:
+```bash
+ANTHROPIC_API_KEY=your_key_here
 ```
 
 **Generate synthetic dataset:**
@@ -134,17 +175,60 @@ export ANTHROPIC_API_KEY=your_key_here
 python -c "from ingest import load_transcripts; load_transcripts('synthetic', n=30)"
 ```
 
-**Run batch pipeline and evaluation:**
+**Run both batch pipelines and evaluation:**
 ```bash
 python run.py
 ```
 
 **Smoke test individual components:**
 ```bash
-python pipeline.py     # single transcript, prints full result
-python ingest.py       # normalization smoke test
-python evaluate.py     # hallucination judge smoke test (faithful vs. hallucinated summary)
+PYTHONPATH=src python src/pipeline.py        # sequential smoke test
+PYTHONPATH=src python src/pipeline_graph.py  # graph smoke test (triggers escalation branch)
+PYTHONPATH=src python src/ingest.py          # normalization smoke test
+PYTHONPATH=src python src/evaluate.py        # hallucination judge smoke test
 ```
+
+---
+## LangGraph Implementation
+
+`pipeline_graph.py` refactors the sequential pipeline into a LangGraph `StateGraph`. Two concrete improvements over `pipeline.py`:
+
+### Parallel fan-out
+
+`summarize`, `categorize`, and `sentiment` are independent — none depends on another's output. In `pipeline.py` they run sequentially. In the graph they fan out from `ingest` as parallel branches and merge at `resolve`. With async LLM calls this reduces per-transcript latency by roughly 3×. The current implementation uses synchronous `_call_llm` calls inside each node, so the parallelism is structural but not yet realized in latency — the next step is swapping in `anthropic.AsyncAnthropic` calls (see [What's Next](#whats-next)).
+
+### Conditional routing
+
+Low-confidence resolutions (below 0.6) route to a dedicated `escalate` node that generates a structured recommendation: what information is missing, what follow-up action is needed, and which team should own it. In `pipeline.py` this logic would live outside the pipeline as post-processing — invisible to any tracing system. Inside the graph it's explicit, auditable, and extensible: adding a new branch (e.g. routing fraud cases to a different handler) is a one-line graph change.
+
+### State management
+
+LangGraph passes a shared `CallState` TypedDict between nodes, merging return values at each step. For keys written by multiple parallel nodes simultaneously — `node_latencies` — an `Annotated` type with a dict-merge reducer handles the fan-in:
+
+```python
+node_latencies: Annotated[dict[str, float], lambda a, b: {**a, **b}]
+```
+
+Without the reducer, LangGraph raises `InvalidUpdateError` when parallel nodes write to the same key in the same step.
+
+### Comparing both versions
+
+```bash
+# Run sequential pipeline
+python run.py
+
+# Run graph pipeline
+python run_graph.py
+
+# Side-by-side comparison on a single transcript
+PYTHONPATH=src python -c "
+from pipeline_graph import compare_vs_sequential
+transcript = open('data/raw_transcripts/synthetic_0001.txt').read()
+compare_vs_sequential(transcript)
+"
+```
+
+Both write to `outputs/` and produce identical `PipelineResult` objects, so `evaluate.py` works against either output file.
 
 ---
 
@@ -152,11 +236,9 @@ python evaluate.py     # hallucination judge smoke test (faithful vs. hallucinat
 
 The current implementation is intentionally scoped to demonstrate the core inference and eval loop clearly. Three directions would move this toward production readiness:
 
-### 1. LangGraph orchestration
+### 1. Async LLM calls for true parallel execution
 
-The four inference tasks (summary, category, sentiment, resolution) are currently sequential. They're independent — none depends on another's output — which makes them natural candidates for parallel execution. LangGraph's node-based graph structure would allow all four to run concurrently, reducing per-transcript latency by roughly 3×. It also provides structured retry logic and fallback routing for individual node failures, which the current `try/except` approach handles only coarsely.
-
-A second use case for LangGraph here is multi-step agentic flows: for unresolved calls, a downstream node could trigger a retrieval step (look up relevant policy, similar past cases) before generating a resolution recommendation. The current pipeline has no memory or retrieval; LangGraph makes that composable.
+The graph is wired for parallel execution but `_call_llm` is synchronous, so the three parallel branches run sequentially in practice. Swapping in `anthropic.AsyncAnthropic` and making node functions `async def` would realize the ~3× latency improvement the graph structure is designed for. The wiring doesn't change — only the LLM call inside each node.
 
 ### 2. W&B Weave for experiment tracking
 
@@ -164,18 +246,29 @@ Prompt iteration is currently manual — change the prompt, re-run eval, compare
 
 Weave's LLM call tracing also addresses the audit trail requirement directly: every inference call, with its inputs, outputs, latency, and cost, is logged automatically.
 
-### 3. Human-in-the-loop annotation
-
-The current eval set is 11 hand-labeled transcripts — enough to catch obvious failures, not enough to characterize model behavior across the full distribution of real calls. A HITL annotation loop would pipe low-confidence predictions (e.g. `resolution_confidence < 0.6`, or any transcript where the model's category is unstable across consistency runs) to a review queue for human correction. Those corrections feed back into the eval set, which grows over time into a reliable benchmark. This is also how you generate fine-tuning data if the team decides to move from prompt engineering on a frontier model toward a smaller, cheaper, fine-tuned model for high-volume inference.
-
 ---
 
 ## Design Decisions & Tradeoffs
 
 | Decision | Rationale | Tradeoff |
 |---|---|---|
-| Sequential LLM calls | Independently evaluable, debuggable | Higher latency vs. parallel |
-| Direct API calls (no framework) | Explicit control, clear primitives | More boilerplate |
+| Sequential pipeline built first | Understand primitives before abstracting | Redundant once graph version exists |
+| Four separate LLM calls | Independently evaluable, debuggable per task | Higher latency vs. single prompt |
+| LangGraph for graph version | Explicit topology, conditional routing, observability hooks | More boilerplate, framework dependency |
+| Synchronous LLM calls in graph nodes | Simpler to reason about during development | Parallel fan-out latency benefit not yet realized |
+| Conditional routing inside graph | Escalation logic is auditable and extensible | Routing threshold (0.6) needs calibration on real data |
+| Annotated reducer for node_latencies | Required for parallel nodes writing to the same state key | Less intuitive than plain TypedDict fields |
 | Synthetic data | PII-safe, controllable scenario coverage | Distribution shift vs. real calls |
 | LLM-as-judge for hallucination | Scalable, no human review bottleneck | Judge has its own error modes |
-| Separate eval CSV | Clean separation of labels from outputs | Manual labeling overhead |
+| Human labels for category accuracy | Only genuine ground truth for boundary judgment calls | Manual labeling overhead |
+| Separate eval CSV | Clean separation of labels from outputs | Must be maintained as taxonomy evolves |
+
+---
+
+## Requirements
+
+```
+anthropic>=0.20.0
+langgraph>=0.2.0
+python-dotenv>=1.0.0
+```
