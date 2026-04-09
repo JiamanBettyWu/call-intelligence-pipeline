@@ -11,7 +11,7 @@ Architecture:
     retrieve — semantic search across chunked + indexed transcript corpus
         │
         ▼
-    answer — LLM call with retrieved chunks as context  [tomorrow]
+    answer — LLM call with retrieved chunks as context 
         │
         ▼
     response with source attribution (transcript_id, speaker, chunk position)
@@ -384,7 +384,7 @@ def retrieve(
 def format_retrieval_result(result: RetrievalResult) -> str:
     """
     Human-readable formatting of retrieval results.
-    Used for debugging and as context builder for the LLM answer node (tomorrow).
+    Used for debugging and as context builder for the LLM answer node.
     """
     lines = [
         f"Question: {result.question}",
@@ -414,7 +414,7 @@ def build_context(retrieved: list[RetrievedChunk]) -> str:
     Format retrieved chunks into a context string for the LLM answer node.
     Each chunk is labeled with its source for attribution in the answer.
 
-    This function is used by the answer node tomorrow — defined here so
+    This function is used by the answer node — defined here so
     the retrieval and answer layers share the same context format.
     """
     lines = []
