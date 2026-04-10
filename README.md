@@ -1,128 +1,97 @@
 # Call Complaint Intelligence Pipeline
 
-An end-to-end pipeline for extracting structured intelligence from customer service call transcripts — summary, root cause classification, sentiment arc, and resolution signal — with a three-layer evaluation framework and two execution models: a sequential baseline and a LangGraph-orchestrated version with conditional routing.
-
-Built as a focused exploration of applied LLM engineering for unstructured conversational data.
-
----
-
-## The Problem
-
-Customer service calls are dense with signal: what went wrong, how the customer felt about it, whether it got resolved. Extracting that signal manually doesn't scale. This pipeline automates the extraction using LLMs, producing structured outputs that can feed downstream analytics, quality monitoring, and agent coaching workflows.
+End-to-end LLM system for extracting structured intelligence from customer service call transcripts, with a multi-transcript RAG Q&A layer and a three-layer evaluation framework.
 
 ---
 
 ## Architecture
 
-Sequential pipeline (`pipeline.py`)
-```
-raw transcript
-      │
-      ▼
-┌─────────────┐
-│  ingest.py  │  normalize speaker turns, quality checks, synthetic generation
-└──────┬──────┘
-       │
-       ▼
-┌──────────────┐
-│ pipeline.py  │  four sequential LLM calls → structured PipelineResult
-└──────┬───────┘
-       │
-       ▼
-┌───────────────┐
-│ evaluate.py   │  category accuracy · hallucination detection · consistency scoring
-└───────────────┘
-       │
-       ▼
-outputs/results.json
-outputs/eval_report.txt
-```
-
-Graph pipeline (`pipeline_graph.py`)
+Two modes of execution:
 
 ```
-START
-  │
-  ▼
-ingest
-  │
-  ├─────────────────┬─────────────────┐
-  ▼                 ▼                 ▼
-summarize      categorize        sentiment     ← parallel fan-out
-  │                 │                 │
-  └─────────────────┴─────────────────┘
-                    │
-                    ▼
-                 resolve
-                    │
-        ┌───────────┴───────────┐
-        ▼                       ▼
-  confidence ≥ 0.6        confidence < 0.6    ← conditional routing
-        │                       │
-        ▼                       ▼
-    finalize                 escalate
-                                │
-                                ▼
-                            finalize
-
+                        transcripts (synthetic)
+                                    │
+                    ┌───────────────┴───────────────┐
+                    │                               │
+             EXTRACTION MODE                    Q&A MODE
+                    │                               │
+              ingest.py                       chunk by speaker turn
+         (normalize, validate)                      │
+                    │                               ▼
+                    │                    embed (all-MiniLM-L6-v2)
+          ┌─────────┴──────────┐                    │
+          │                    │                    ▼
+     pipeline.py       pipeline_graph.py     ChromaDB index
+     (sequential)       (LangGraph)                 │
+          │                    │            question → retrieve
+          │          ┌─────────┴──────┐             │
+          │        ingest             │             ▼
+          │          │                │       answer.py
+          │    ┌─────┼─────┐          │    (RAGAnswer + citations)
+          │  sum.  cat.  sent.        │ 
+          │    └─────┼─────┘          │
+          │        resolve            │
+          │       ┌──┴──┐             │
+          │    final  escalate        │
+          │                           │
+          └──────────┬────────────────┘
+                     │
+                evaluate.py
+      (accuracy · hallucination · consistency)
+                     │
+              outputs/results.json
+              outputs/eval_report.txt
 ```
 
+**Extraction vs Q&A — when to use which:**
 
-### Why four separate LLM calls instead of one prompt
+|Question|Right tool|
+|---|---|
+|How do agents handle fraud disputes?|RAG — semantic lookup|
+|What fraction of calls ended unresolved?|Pipeline outputs → `df["resolution_flag"].value_counts()`|
+|What did the customer say in transcript 0003?|RAG with transcript filter|
+|Which root cause category appears most?|Pipeline outputs → `value_counts()`|
 
-Each task — summary, category, sentiment, resolution — has its own prompt and its own output. This makes the system debuggable: if category accuracy degrades, I can isolate and fix that prompt without touching the others. A single mega-prompt is a black box; four small ones are individually evaluable and monitorable. The tradeoff is latency (~2–4s per transcript vs ~1s). For a batch offline workload, that's acceptable.
-
-### Why two execution models
-`pipeline.py` was built first, without an orchestration framework, to understand the primitive operations — prompt construction, response parsing, error handling — before abstracting them. `pipeline_graph.py` was built second, as a LangGraph refactor, to solve two specific problems the sequential version can't address cleanly: independent tasks running serially when they don't need to, and conditional routing logic that belongs inside the pipeline rather than in post-processing. Both versions produce identical `PipelineResult` outputs and can be evaluated with the same `evaluate.py`.
+RAG retrieves by relevance — the most similar chunks, not all matching chunks. Counting and aggregation questions belong to the structured `outputs/results.json` layer.
 
 ---
 
-## Evaluation Framework
+## Key Design Decisions
 
-Real call transcripts are PII-sensitive, so the dataset here is synthetic — 30 transcripts generated via the same model being evaluated, covering 8 root cause categories across three resolution variants (clean resolution, partial resolution, unresolved/escalated). Generating the data deliberately forced close attention to what realistic complaint scenarios actually look like, which is useful prior to any labeling or eval work.
+**Four separate LLM calls, not one prompt.** Summary, category, sentiment, and resolution each have their own prompt and output. Each task is self-contained.
 
-### Layer 1: Category Accuracy
+**Sequential pipeline built before LangGraph.** `pipeline.py` executes prompt construction, JSON parsing, error handling, before abstracting them. `pipeline_graph.py` solves two problems the sequential version can't: independent tasks running serially, and conditional routing that belongs inside the pipeline. The escalation node (low-confidence resolutions → structured recommendation) is the new behavior.
 
-A small hand-labeled eval set (`data/eval_labels.csv`, 15 transcripts) provides ground truth for root cause classification. Labeling these manually before running eval surfaces category boundary ambiguities — cases where "billing_dispute" and "policy_disagreement" overlap, for instance — that prompt iteration can address.
+**Chunk by speaker turn, not token windows.** Speaker turns are natural semantic units in conversational data. Splitting mid-turn breaks meaning. Turns under 8 words are filtered at index time.
 
-```
-Overall accuracy:        63.6%   (7/11 correct)
+**Pydantic for LLM output, dataclass for internal data.** `RAGAnswer` and `Citation` use Pydantic — runtime validation catches malformed LLM output at the boundary. `PipelineResult` and `SentimentArc` use dataclasses — internal data you construct and trust doesn't need coercion.
 
-Per-category accuracy:
-  account_access                      0.0%
-  agent_error_or_misinformation       100.0%
-  billing_dispute                     50.0%
-  fraud_or_unauthorized_charge        100.0%
-  product_or_feature_issue            0.0%
-  technical_issue                     100.0%
-```
+**Human labels for category accuracy, LLM-as-judge for hallucination.** Category ground truth requires a judgment call about boundary definitions — only a human can settle where `billing_dispute` ends and `policy_disagreement` begins. Hallucination detection is a text entailment check — verifiable against the source transcript, scalable with an LLM judge.
 
-The `agent_error` / `policy_disagreement` confusion is the most instructive failure. Both categories involve a customer who feels wronged by the company, but the root cause differs: one is human error, the other is a structural policy the customer disagrees with. The prompt now surfaces that distinction explicitly; consistency improved across iterations.
+---
 
-### Layer 2: Hallucination Detection (LLM-as-Judge)
+## Evaluation
 
-A second LLM call reads the source transcript and the generated summary, flagging any claims in the summary that can't be verified from the transcript. The judge prompt distinguishes three hallucination types: added information, contradiction, and unverifiable specifics (dates, amounts, outcomes not stated in the call).
+Dataset: 30 synthetic transcripts covering 8 root cause categories × 3 resolution variants. Generated via the same model being evaluated — PII-safe and forces close attention to what realistic complaint scenarios look like.
 
-This is imperfect — an LLM judge has its own error modes — but it's scalable in a way human review of every summary isn't. The output is a confidence score and a list of flagged claims, both of which can be logged and monitored over time.
+**Layer 1 — Category accuracy** (hand-labeled ground truth, 15 transcripts)
 
 ```
-Hallucination rate:   6.7%   (2/30 summaries flagged)
+Overall: 63.6%
 ```
 
-Both flagged cases involved the model inferring resolution outcomes ("the agent resolved the issue") from agent language that was actually inconclusive ("I'll look into that for you"). This is a prompt-level fix: the summary prompt now instructs the model to distinguish confirmed outcomes from stated intentions.
-
-### Layer 3: Consistency Scoring
-
-The same transcript was run three times. Category label, resolution flag, and sentiment arc end-state were compared across runs to measure output stability.
-
-Non-determinism is a production risk, not just a research curiosity. A model that classifies the same call as `billing_dispute` on Monday and `policy_disagreement` on Thursday is not a reliable input to downstream analytics or monitoring systems.
+**Layer 2 — Hallucination detection** (LLM-as-judge)
 
 ```
-Category stability:    100%   (5/5 transcripts consistent across 3 runs)
-Resolution stability:  100%  (5/5 consistent)
+Rate: 6.7% (2/30 flagged)
 ```
 
-The one unstable category case was a genuine boundary transcript — a customer disputing a fee they considered unfair, which sits at the `billing_dispute` / `policy_disagreement` boundary. This points to a taxonomy question rather than a model failure: the two categories may need clearer operational definitions, or the boundary cases may warrant a separate label.
+**Layer 3 — Consistency scoring** (3 runs per transcript, 5 transcripts)
+
+```
+Category stability: 100%
+Resolution stability: 100%
+```
 
 ---
 
@@ -131,137 +100,67 @@ The one unstable category case was a genuine boundary transcript — a customer 
 ```
 call-intelligence-pipeline/
 ├── data/
-│   ├── raw_transcripts/        # individual .txt files (synthetic)
+│   ├── raw_transcripts/            # synthetic .txt files
 │   ├── synthetic_transcripts.json
-│   └── eval_labels.csv         # hand-labeled ground truth (15 transcripts)
+│   ├── chroma_db/                  # persisted vector index
+│   └── eval_labels.csv             # hand-labeled ground truth
 ├── src/
-│   ├── ingest.py               # loading, normalization, synthetic generation
-│   ├── pipeline.py             # sequential LLM inference layer
-│   ├── pipeline_graph.py       # LangGraph refactor with parallel fan-out and conditional routing
-│   └── evaluate.py             # three-layer eval framework
+│   ├── ingest.py                   # loading, normalization, generation
+│   ├── pipeline.py                 # sequential inference
+│   ├── pipeline_graph.py           # LangGraph: parallel fan-out + conditional routing
+│   ├── evaluate.py                 # three-layer eval framework
+│   ├── rag_qa.py                   # chunking, embedding, indexing, retrieval
+│   └── answer.py                   # LLM answer node, Pydantic output schema
 ├── outputs/
-│   ├── results.json            # sequential pipeline outputs
-│   ├── results_graph.json      # graph pipeline outputs
-│   ├── eval_results.json       # full eval output (machine-readable)
-│   └── eval_report.txt         # human-readable eval summary
 ├── notebooks/
-│   └── exploration.ipynb       # prompt iteration, error analysis, label review
-├── run.py                      # batch entry point — sequential pipeline
-├── run_graph.py                # batch entry point — graph pipeline
-├── .env                        # ANTHROPIC_API_KEY (not committed)
-├── .gitignore
-├── README.md
+│   └── exploration.ipynb
+├── run.py                          # sequential batch entry point
+├── run_graph.py                    # graph batch entry point
+├── .env
 └── requirements.txt
 ```
 
 ---
 
-## Setup
+## Setup & Usage
 
 ```bash
-python -m venv .venv
-source .venv/bin/activate
-pip install anthropic langgraph python-dotenv
-pip freeze > requirements.txt
+python -m venv .venv && source .venv/bin/activate
+pip install anthropic langgraph python-dotenv chromadb sentence-transformers pydantic
 ```
-
-Add to `.env`:
-```bash
-ANTHROPIC_API_KEY=your_key_here
-```
-
-**Generate synthetic dataset:**
-```bash
-python -c "from ingest import load_transcripts; load_transcripts('synthetic', n=30)"
-```
-
-**Run both batch pipelines and evaluation:**
-```bash
-python run.py
-```
-
-**Smoke test individual components:**
-```bash
-PYTHONPATH=src python src/pipeline.py        # sequential smoke test
-PYTHONPATH=src python src/pipeline_graph.py  # graph smoke test (triggers escalation branch)
-PYTHONPATH=src python src/ingest.py          # normalization smoke test
-PYTHONPATH=src python src/evaluate.py        # hallucination judge smoke test
-```
-
----
-## LangGraph Implementation
-
-`pipeline_graph.py` refactors the sequential pipeline into a LangGraph `StateGraph`. Two concrete improvements over `pipeline.py`:
-
-### Parallel fan-out
-
-`summarize`, `categorize`, and `sentiment` are independent — none depends on another's output. In `pipeline.py` they run sequentially. In the graph they fan out from `ingest` as parallel branches and merge at `resolve`. With async LLM calls this reduces per-transcript latency by roughly 3×. The current implementation uses synchronous `_call_llm` calls inside each node, so the parallelism is structural but not yet realized in latency — the next step is swapping in `anthropic.AsyncAnthropic` calls (see [What's Next](#whats-next)).
-
-### Conditional routing
-
-Low-confidence resolutions (below 0.6) route to a dedicated `escalate` node that generates a structured recommendation: what information is missing, what follow-up action is needed, and which team should own it. In `pipeline.py` this logic would live outside the pipeline as post-processing — invisible to any tracing system. Inside the graph it's explicit, auditable, and extensible: adding a new branch (e.g. routing fraud cases to a different handler) is a one-line graph change.
-
-### State management
-
-LangGraph passes a shared `CallState` TypedDict between nodes, merging return values at each step. For keys written by multiple parallel nodes simultaneously — `node_latencies` — an `Annotated` type with a dict-merge reducer handles the fan-in:
-
-```python
-node_latencies: Annotated[dict[str, float], lambda a, b: {**a, **b}]
-```
-
-Without the reducer, LangGraph raises `InvalidUpdateError` when parallel nodes write to the same key in the same step.
-
-### Comparing both versions
 
 ```bash
-# Run sequential pipeline
-python run.py
+# Generate data
+PYTHONPATH=src python -c "from ingest import load_transcripts; load_transcripts('synthetic', n=30)"
 
-# Run graph pipeline
-python run_graph.py
+# Run pipelines
+python run.py                           # sequential
+python run_graph.py                     # LangGraph
 
-# Side-by-side comparison on a single transcript
+# Build RAG index
+PYTHONPATH=src python src/rag_qa.py
+
+# Ask a question
 PYTHONPATH=src python -c "
-from pipeline_graph import compare_vs_sequential
-transcript = open('data/raw_transcripts/synthetic_0001.txt').read()
-compare_vs_sequential(transcript)
+from answer import ask, format_answer
+print(format_answer(ask('How do agents handle fraud disputes?')))
 "
-```
 
-Both write to `outputs/` and produce identical `PipelineResult` objects, so `evaluate.py` works against either output file.
+# Evaluate
+PYTHONPATH=src python src/evaluate.py
+```
 
 ---
 
 ## What's Next
 
-The current implementation is intentionally scoped to demonstrate the core inference and eval loop clearly. Three directions would move this toward production readiness:
+**Async LLM calls** — swap `_call_llm` for `anthropic.AsyncAnthropic` inside each graph node to realize the ~3× latency improvement the parallel fan-out is designed for.
 
-### 1. Async LLM calls for true parallel execution
+**Agentic RAG with question routing** — classify questions before retrieval (lookup vs. aggregation vs. hybrid) and route to the appropriate tool. Conditional routing in LangGraph is already demonstrated in the extraction pipeline; this applies the same pattern to the Q&A layer. Multi-step retrieval with a sufficiency check is the full agentic version.
 
-The graph is wired for parallel execution but `_call_llm` is synchronous, so the three parallel branches run sequentially in practice. Swapping in `anthropic.AsyncAnthropic` and making node functions `async def` would realize the ~3× latency improvement the graph structure is designed for. The wiring doesn't change — only the LLM call inside each node.
+**W&B Weave** — per-call tracing (inputs, outputs, latency, cost) and structured experiment tracking for prompt iteration. Currently prompt changes are compared manually against a text file.
 
-### 2. W&B Weave for experiment tracking
-
-Prompt iteration is currently manual — change the prompt, re-run eval, compare numbers in a text file. Weights & Biases Weave would capture each prompt version, the model outputs, and the eval metrics in a structured experiment log, making it straightforward to compare runs, roll back to a prior prompt, and share results with teammates. For a team running evals at scale across millions of inputs, this is the difference between ad hoc iteration and reproducible experimentation.
-
-Weave's LLM call tracing also addresses the audit trail requirement directly: every inference call, with its inputs, outputs, latency, and cost, is logged automatically.
-
----
-
-## Design Decisions & Tradeoffs
-
-| Decision | Rationale | Tradeoff |
-|---|---|---|
-| Sequential pipeline built first | Understand primitives before abstracting | Redundant once graph version exists |
-| Four separate LLM calls | Independently evaluable, debuggable per task | Higher latency vs. single prompt |
-| LangGraph for graph version | Explicit topology, conditional routing, observability hooks | More boilerplate, framework dependency |
-| Synchronous LLM calls in graph nodes | Simpler to reason about during development | Parallel fan-out latency benefit not yet realized |
-| Conditional routing inside graph | Escalation logic is auditable and extensible | Routing threshold (0.6) needs calibration on real data |
-| Annotated reducer for node_latencies | Required for parallel nodes writing to the same state key | Less intuitive than plain TypedDict fields |
-| Synthetic data | PII-safe, controllable scenario coverage | Distribution shift vs. real calls |
-| LLM-as-judge for hallucination | Scalable, no human review bottleneck | Judge has its own error modes |
-| Human labels for category accuracy | Only genuine ground truth for boundary judgment calls | Manual labeling overhead |
-| Separate eval CSV | Clean separation of labels from outputs | Must be maintained as taxonomy evolves |
+**HITL annotation loop** — pipe low-confidence and consistency-unstable predictions to a review queue. Corrections grow the eval set over time and generate fine-tuning data if the team moves toward a smaller, specialized model for high-volume inference.
 
 ---
 
@@ -271,4 +170,7 @@ Weave's LLM call tracing also addresses the audit trail requirement directly: ev
 anthropic>=0.20.0
 langgraph>=0.2.0
 python-dotenv>=1.0.0
+chromadb>=0.4.0
+sentence-transformers>=2.2.0
+pydantic>=2.0.0
 ```
