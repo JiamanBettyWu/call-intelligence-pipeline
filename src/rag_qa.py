@@ -21,8 +21,7 @@ Design decisions:
     - Chunk by speaker turn, not arbitrary token windows. Speaker turns are
       natural semantic units in conversational data — a customer explaining
       their problem, an agent describing a resolution. Splitting mid-turn
-      would break the meaning. This is specific to call transcript data and
-      worth explaining to a hiring manager.
+      would break the meaning. This is specific to call transcript data.
 
     - ChromaDB for the vector store. Stores embeddings alongside metadata
       (transcript_id, speaker, turn_index, chunk_text) in a persistent local
@@ -33,7 +32,7 @@ Design decisions:
       no API key required. 384-dimensional embeddings, good general semantic
       quality for English conversational text. The tradeoff vs. a hosted
       embedding API (e.g. OpenAI text-embedding-3-small) is quality vs.
-      cost/simplicity — for a portfolio project, local wins.
+      cost/simplicity.
 
     - Minimum chunk length filter. Very short turns ("Yes.", "I see.",
       "Hold on.") add noise to the index without meaningful semantic content.
